@@ -70,13 +70,13 @@ export function Footer() {
                   <div className="flex items-center gap-3 text-foreground/70 hover:text-foreground transition-colors">
                     <Mail size={18} />
                     <a href="mailto:contact@example.com" className="hover:underline">
-                      contact@example.com
+                      farellelghifari@gmail.com
                     </a>
                   </div>
                   <div className="flex items-center gap-3 text-foreground/70 hover:text-foreground transition-colors">
                     <Phone size={18} />
-                    <a href="tel:+6281234567890" className="hover:underline">
-                      +62 812 3456 7890
+                    <a href="tel:+6281346864377" className="hover:underline">
+                      +62 813 46864377
                     </a>
                   </div>
                   <div className="flex items-start gap-3 text-foreground/70 hover:text-foreground transition-colors">

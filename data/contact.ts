@@ -28,7 +28,7 @@ export const contactInfo: IContactInfo = {
   socialLinks: [
     {
       platform: "LinkedIn",
-      url: "https://linkedin.com/in/farellelghifari",
+      url: "https://www.linkedin.com/in/farell-elghifari/",
       icon: "Linkedin",
       label: "Connect on LinkedIn",
     },
