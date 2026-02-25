@@ -11,6 +11,7 @@ export default function ExperienceAllPage() {
   return (
     <div className="relative overflow-hidden bg-background min-h-[calc(100vh-80px)]">
       <section className="px-4 py-16 md:px-6">
+        
         <div className="mx-auto max-w-4xl">
           {/* Back Button */}
           <Link
@@ -33,6 +34,12 @@ export default function ExperienceAllPage() {
               {items.length} item{items.length !== 1 ? 's' : ''}
             </p>
           </div>
+
+
+           <div className="absolute inset-0 z-10 overflow-hidden">
+        <div className="absolute top-1/4 left-1/4 h-96 w-96 rounded-full bg-primary/20 blur-3xl dark:bg-primary/10" />
+        <div className="absolute bottom-1/4 right-1/4 h-96 w-96 rounded-full bg-primary/15 blur-3xl dark:bg-primary/5" />
+      </div>
 
           {/* Items Grid */}
           <div className="grid gap-6 md:grid-cols-1">
