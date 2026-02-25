@@ -132,7 +132,7 @@ export default function DetailPage({ params }: { params: Promise<{ category: str
                     {((item as any).achievements || (item as any).responsibilities || (item as any).impact || (item as any).details || []).map((point: string, i: number) => (
                       <li key={i} className="flex gap-3 text-foreground/80">
                         <span className="mt-1 flex-shrink-0 w-2 h-2 rounded-full bg-primary" />
-                        <span>{point}</span>
+                        <span>{typeof point === 'object' ? (point as any).title || (point as any).description : point}</span>
                       </li>
                     ))}
                   </ul>
