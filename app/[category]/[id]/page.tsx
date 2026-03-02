@@ -145,7 +145,7 @@ export default function DetailPage({ params }: { params: Promise<{ category: str
                         <li key={i} className="flex gap-3 text-foreground/80">
                           <span className="mt-1 flex-shrink-0 w-2 h-2 rounded-full bg-primary" />
                           <span>
-                            {/* INI KUNCINYA: Cek apakah dia object atau teks biasa */}
+
                             {typeof point === 'object'
                               ? (point.title || point.organization || point.description)
                               : String(point)}
@@ -203,7 +203,7 @@ export default function DetailPage({ params }: { params: Promise<{ category: str
                         <div key={info.label}>
                           <p className="text-sm text-foreground/60">{info.label}</p>
                           <div className="text-foreground font-medium">
-                            {/* INI PROTEKSINYA: Biar gak error object lagi */}
+
                             {typeof info.value === 'object'
                               ? (info.value.name || info.value.title || "Detail Available")
                               : String(info.value)}

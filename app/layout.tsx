@@ -50,7 +50,7 @@ export default function RootLayout({
           defaultTheme="light"
           enableSystem
         >
-          {/* 🔥 AUTO FOLLOW SYSTEM (kecuali user override) */}
+          {}
           <SystemThemeSync />
 
           <Navbar />
@@ -62,10 +62,10 @@ export default function RootLayout({
 
           <div className="absolute inset-0 -z-1 overflow-hidden">
             <div className="absolute top-30 left-1/18 h-96 w-96 rounded-full bg-primary/20 blur-2xl dark:bg-primary/5" />
-            <div className="absolute top-50 right-180 h-96 w-96 rounded-full bg-primary/20 blur-3xl dark:bg-primary/5" />
-            <div className="absolute top-1/4 right-1/8 h-96 w-96 rounded-full bg-primary/20 blur-3xl dark:bg-primary/5" />
-            <div className="absolute top-1/2 left-1/6 h-96 w-96 rounded-full bg-primary/20 blur-3xl dark:bg-primary/5" />
-            <div className="absolute bottom-1/6 right-1/6 h-100 w-100 rounded-full bg-primary/15 blur-3xl dark:bg-primary/5" />
+            <div className="absolute top-50 right-180 h-96 w-96 rounded-full bg-primary/20 blur-2xl dark:bg-primary/5" />
+            <div className="absolute top-1/4 right-1/8 h-96 w-96 rounded-full bg-primary/20 blur-2xl dark:bg-primary/5" />
+            <div className="absolute top-1/2 left-1/6 h-96 w-96 rounded-full bg-primary/20 blur-2xl dark:bg-primary/5" />
+            <div className="absolute bottom-1/6 right-1/6 h-100 w-100 rounded-full bg-primary/15 blur-2xl dark:bg-primary/5" />
           </div>
 
           <Footer />
