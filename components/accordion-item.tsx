@@ -242,11 +242,11 @@ export function AccordionItem({
                       ))}
                     </div>
                   )}
-                  {/* {skills.length > 0 && (
+                  {skills.length > 0 && (
                     <SkillsSection skills={skills} certificationTitle={title} />
-                  )} */}
+                  )}
                 </div>
-                            {skills.length > 0 && (
+                            {/* {skills.length > 0 && (
               <>
               <SkillsSection skills={skills} certificationTitle={title} />
               <div className='flex gap-3'>
@@ -257,7 +257,7 @@ export function AccordionItem({
                 </div>
               
               </>
-            )}
+            )} */}
 
                 {/* ACTION BUTTON */}
                 {(detailLink || (category && id)) && (

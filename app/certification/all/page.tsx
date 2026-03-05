@@ -142,7 +142,6 @@ export default function CertificationAllPage() {
                 <div key={groupName} className="space-y-6">
                   <motion.div variants={fadeInUp} className="border-b border-border pb-4">
                     <h2 className="text-2xl font-bold text-foreground">{groupName}</h2>
-                    {/* DISINI: Menampilkan kalimat penjelasan pengganti yearRange */}
                     <p className="text-sm text-foreground/50 mt-1 italic">
                       {groupDescriptions[groupName] || "Professional certifications in this category."}
                     </p>
@@ -164,7 +163,6 @@ export default function CertificationAllPage() {
                             summary={item.description}
                             startDate={item.issueDate}
                             endDate={item.expirationDate}
-                            // Mapping Logo Hardcode
                             logo={manualData?.logoLembaga || item.logo || item.image}
                             skills={manualData?.skillsLogos || item.skills}
                             category="certification"
