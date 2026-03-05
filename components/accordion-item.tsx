@@ -242,10 +242,22 @@ export function AccordionItem({
                       ))}
                     </div>
                   )}
-                  {skills.length > 0 && (
+                  {/* {skills.length > 0 && (
                     <SkillsSection skills={skills} certificationTitle={title} />
-                  )}
+                  )} */}
                 </div>
+                            {skills.length > 0 && (
+              <>
+              <SkillsSection skills={skills} certificationTitle={title} />
+              <div className='flex gap-3'>
+                  <div className='bg-blue-500 w-10 h-10 rounded-full'/>
+                  <div className='bg-blue-500 w-10 h-10 rounded-full'/>
+                  <div className='bg-blue-500 w-10 h-10 rounded-full'/>
+                  <div className='bg-blue-500 w-10 h-10 rounded-full'/>
+                </div>
+              
+              </>
+            )}
 
                 {/* ACTION BUTTON */}
                 {(detailLink || (category && id)) && (
