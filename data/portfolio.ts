@@ -117,7 +117,7 @@ export interface IPortfolioData {
 export const portfolioData: IPortfolioData = {
   profile: {
     name: "Farell Elghifari Putratama",
-    title: "Multidisciplinary Engineer Bridging Engineering, Technology & Business.",
+    title: "Multidisciplinary Engineer Bridging Engineering, Technology & Business",
     bio: "Multidisciplinary graduate with a background in naval architecture and experience across engineering, energy systems, and technology-driven environments. Developed analytical, technical, and problem-solving skills through academic projects, internships, and professional training. Interested in exploring the intersection of engineering, technology, and business to contribute to innovative and impactful solutions across industries.",
     profileImage: "/images/profile-picture.png",
   },

@@ -108,7 +108,7 @@ export default function CategoryPage({ params }: { params: Promise<{ category: s
     <div className="relative overflow-hidden min-h-[calc(100vh-80px)]">
       <section className="px-4 py-30 md:px-6">
         <div className="mx-auto max-w-4xl">
-          <div className="mb-12 space-y-4 md:mb-16">
+          <div className="mb-12 space-y-4 md:mb-10">
             <div className="flex items-center gap-3">
               <h1 className="text-5xl md:text-6xl font-bold text-foreground text-balance">{title}</h1>
               {isPlaceholder && <span className="text-xs font-medium px-2 py-1 rounded-full bg-primary/10 text-primary">Skeleton</span>}

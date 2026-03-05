@@ -104,12 +104,12 @@ export default function CertificationAllPage() {
             </Link>
           </motion.div>
 
-          <motion.div variants={fadeInUp} className="mb-12 space-y-4">
+          <motion.div variants={fadeInUp} className="mb-10 space-y-2">
             <h1 className="text-5xl md:text-6xl font-bold text-foreground text-balance">
               Certifications
             </h1>
             <p className="max-w-2xl text-lg text-foreground/70 md:text-xl">
-              Professional credentials and qualifications
+              Certifications supporting multidisciplinary development across engineering, energy systems,operations, and technology
             </p>
           </motion.div>
 

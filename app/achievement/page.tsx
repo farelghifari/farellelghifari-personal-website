@@ -34,7 +34,7 @@ export default function AchievementsPage() {
     <div className="relative overflow-hidden  min-h-[calc(100vh-80px)]">
       <section className="px-4 py-30 md:px-6">
         <div className="mx-auto max-w-4xl">
-          <div className="mb-12 space-y-4 md:mb-16">
+          <div className="mb-12 space-y-4 md:mb-10">
             <h1 className="text-5xl md:text-6xl font-bold text-foreground">Achievements</h1>
             <p className="text-lg text-foreground/70">Awards and recognitions</p>
           </div>
