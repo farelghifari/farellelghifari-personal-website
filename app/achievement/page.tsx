@@ -32,7 +32,7 @@ export default function AchievementsPage() {
 
   return (
     <div className="relative overflow-hidden  min-h-[calc(100vh-80px)]">
-      <section className="px-4 py-16 md:px-6">
+      <section className="px-4 py-30 md:px-6">
         <div className="mx-auto max-w-4xl">
           <div className="mb-12 space-y-4 md:mb-16">
             <h1 className="text-5xl md:text-6xl font-bold text-foreground">Achievements</h1>
@@ -52,7 +52,6 @@ export default function AchievementsPage() {
                   images={item.images || []}
                   startDate={item.date}
                   endDate={item.date}
-                  // Mengirimkan props yang dibutuhkan AccordionItem baru
                   isOpen={openId === item.id}
                   onToggle={() => setOpenId(openId === item.id ? null : item.id)}
                 />
