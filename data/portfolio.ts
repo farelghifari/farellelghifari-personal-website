@@ -4,7 +4,7 @@
 export interface SupportingDocument {
   id: string;
   title: string;
-  type: "pdf" | "youtube";
+  type: "pdf" | "youtube" | "link" | "external";
   url: string;
 }
 
@@ -284,26 +284,26 @@ export const portfolioData: IPortfolioData = {
         "/images/education/edu-2/img2.jpg",
         "/images/education/edu-2/img3.jpg",
       ],
-      supportingDocuments: [
-        {
-          id: "doc-edu-2-1",
-          title: "Bootcamp Certificate",
-          type: "pdf",
-          url: "/documents/education/bootcamp-certificate.pdf",
-        },
-        {
-          id: "doc-edu-2-2",
-          title: "Capstone Project Demo",
-          type: "youtube",
-          url: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-        },
-        {
-          id: "doc-edu-2-3",
-          title: "Skill Assessment Results",
-          type: "pdf",
-          url: "/documents/education/skill-assessment.pdf",
-        },
-      ],
+      // supportingDocuments: [
+      //   {
+      //     id: "doc-edu-2-1",
+      //     title: "Bootcamp Certificate",
+      //     type: "pdf",
+      //     url: "/documents/education/bootcamp-certificate.pdf",
+      //   },
+      //   {
+      //     id: "doc-edu-2-2",
+      //     title: "Capstone Project Demo",
+      //     type: "youtube",
+      //     url: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+      //   },
+      //   {
+      //     id: "doc-edu-2-3",
+      //     title: "Skill Assessment Results",
+      //     type: "pdf",
+      //     url: "/documents/education/skill-assessment.pdf",
+      //   },
+      // ],
       // volunteering: [
       //   {
       //     id: "vol-3",
@@ -409,16 +409,16 @@ export const portfolioData: IPortfolioData = {
       supportingDocuments: [
         {
           id: "doc-exp-1-1",
-          title: "Architecture Documentation",
+          title: "Work Certificate",
           type: "pdf",
-          url: "/documents/experience/architecture-doc.pdf",
+          url: "/documents/experience/sertifikat-pt-adaro-andalan-indonesia.pdf",
         },
-        {
-          id: "doc-exp-1-2",
-          title: "Team Project Walkthrough",
-          type: "youtube",
-          url: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-        },
+        // {
+        //   id: "doc-exp-1-2",
+        //   title: "Team Project Walkthrough",
+        //   type: "youtube",
+        //   url: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+        // },
       ],
     },
     {
@@ -449,9 +449,9 @@ export const portfolioData: IPortfolioData = {
       supportingDocuments: [
         {
           id: "doc-exp-2-1",
-          title: "Project Case Study",
+          title: "Internship Certificate",
           type: "pdf",
-          url: "/documents/experience/project-case-study.pdf",
+          url: "/documents/experience/sertifikat-pt-biro-klasifikasi-indonesia.pdf",
         },
       ],
     },
@@ -481,9 +481,9 @@ export const portfolioData: IPortfolioData = {
       supportingDocuments: [
         {
           id: "doc-exp-3-1",
-          title: "UI Component Library",
+          title: "Internship Certificate",
           type: "pdf",
-          url: "/documents/experience/component-library.pdf",
+          url: "/documents/experience/sertifikat-msib-zenius-education.pdf",
         },
       ],
     },
@@ -516,17 +516,23 @@ export const portfolioData: IPortfolioData = {
       ],
       supportingDocuments: [
         {
-          id: "doc-exp-4-1",
-          title: "E-Commerce Platform Demo",
-          type: "youtube",
-          url: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-        },
-        {
           id: "doc-exp-4-2",
-          title: "Project Portfolio",
+          title: "Internship Certificate",
           type: "pdf",
-          url: "/documents/experience/freelance-portfolio.pdf",
+          url: "/documents/experience/sertifikat-msib-yabb-dan-goto-group.pdf",
         },
+        // {
+        //   id: "doc-exp-4-1",
+        //   title: "E-Commerce Platform Demo",
+        //   type: "youtube",
+        //   url: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+        // },
+        // {
+        //   id: "doc-exp-4-2",
+        //   title: "Internship Certificate",
+        //   type: "pdf",
+        //   url: "/documents/experience/freelance-portfolio.pdf",
+        // },
       ],
     },
     {
@@ -559,17 +565,17 @@ export const portfolioData: IPortfolioData = {
           id: "doc-exp-5-1",
           title: "Internship Certificate",
           type: "pdf",
-          url: "/documents/experience/internship-certificate.pdf",
+          url: "/documents/experience/sertifikat-pt-dok-dan-perkapalan-kodja-bahari.pdf",
         },
       ],
     },
   ],
   organization: [
     {
-      id: "org-5",
+      id: "org-1",
       name: "Research of Marine Technology",
       role: "Senior Electrical Engineer & Safety Consultant",
-      logo: "/logo/logo-alison.jpg",
+      logo: "/logo/logo-rmt.png",
       startDate: "March 2022",
       endDate: "July 2024",
       description:
@@ -591,14 +597,50 @@ export const portfolioData: IPortfolioData = {
       supportingDocuments: [
         {
           id: "doc-org-5-1",
-          title: "W3C Specifications",
-          type: "pdf",
-          url: "/documents/organization/w3c-specs.pdf",
+          title: "Innovation Prize On Monaco Energy Boat Challenge 2023",
+          type: "youtube",
+          url: "https://www.youtube.com/watch?v=a3uoXBL9tQA&t=4096s",
+        },
+        {
+          id: "doc-org-5-2",
+          title: "Event Video",
+          type: "youtube",
+          url: "https://www.youtube.com/watch?v=94-Yd6y8OzU&list=PLwljkw28MCzef1DbQnO5ezM7wBehMC4xu&index=51",
+        },
+        {
+          id: "doc-org-5-3",
+          title: "Press Coverage",
+          type: "youtube",
+          url: "https://www.youtube.com/watch?v=bkf9z7RegCA",
+        },
+        {
+          id: "doc-org-5-4",
+          title: "Press Coverage 2",
+          type: "youtube",
+          url: "https://www.youtube.com/watch?v=gqqTYTQr9Zw",
+        },
+        {
+          id: "doc-org-5-5",
+          title: "RMT Company Profile",
+          type: "youtube",
+          url: "https://www.youtube.com/watch?v=shirSxIPGEA",
+        },
+        {
+          id: "doc-org-5-6",
+          title: "Diponegoro 1.0 Launching",
+          type: "youtube",
+          url: "https://www.youtube.com/watch?v=lTz4VWA_v6Q",
+        },
+        {
+          id: "doc-org-5-7",
+          title: "Official Sponsorship",
+          type: "youtube",
+          url: "https://www.youtube.com/watch?v=0YK2a0b12G0",
         },
       ],
     },
     {
-      id: "org-1",
+      id: "org-2",
       name: "Student Executive Board – Naval Architecture UNDIP",
       logo: "/logo/logo-himaspal.jpg",
       role: "Head of Media & Information Unit",
@@ -619,53 +661,49 @@ export const portfolioData: IPortfolioData = {
       ],
       supportingDocuments: [
         {
-          id: "doc-org-1-1",
-          title: "Conference Highlights",
-          type: "youtube",
-          url: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-        },
-      ],
-    },
-    {
-      id: "org-2",
-      name: "Maritime Festival Universitas Diponegoro",
-      role: "Vice Chief – Media & Creative",
-      logo: "/logo/logo-.png",
-      startDate: "September 2021",
-      endDate: "July 2022",
-      description:
-        "Led creative media strategy and digital engagement initiatives for maritime festival events.",
-      responsibilities: [
-        "Boosted engagement by creating targeted media concepts and campaigns",
-        "RLed media strategy as conceptor for large-scale organizational events",
-        "Optimized social media content flow to expand reach and visibility",
-      ],
-      tags: [
-        "Creative Strategy",
-        "Social Media Management",
-        "Brand Communication",
-      ],
-      images: [
-        "/images/organization/org-2/img1.jpg",
-        "/images/organization/org-2/img2.jpg",
-      ],
-      supportingDocuments: [
-        {
           id: "doc-org-2-1",
-          title: "GitHub Contribution Report",
+          title: "Organization Certificate",
           type: "pdf",
-          url: "/documents/organization/github-report.pdf",
-        },
-        {
+          url: "/documents/organizational/himaspal-2022.pdf",
+        },{
           id: "doc-org-2-2",
-          title: "Community Talk: Open Source Best Practices",
+          title: "Company Profile",
           type: "youtube",
-          url: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+          url: "https://www.youtube.com/watch?v=mXN4tNHHJvA",
         },
       ],
     },
     {
       id: "org-3",
+      name: "Student Executive Board – Naval Architecture UNDIP",
+      logo: "/logo/logo-himaspal.jpg",
+      role: "Staff of Interest and Talent",
+      startDate: "October 2020",
+      endDate: "January 2022",
+      description:
+        "Contributed to the Interest and Talent Division in supporting student development initiatives and organizational activities within the Naval Architecture Student Executive Board. The role involved assisting in the implementation of internal media systems and supporting team coordination for various organizational programs.",
+      responsibilities: [
+        "Assisted in implementing the organizational media flow system according to the established plan.",
+"Carried out assigned tasks related to media and communication activities under division supervision.",
+"Supported coordination efforts among team members to facilitate effective collaboration and achieve organizational objectives.",
+      ],
+      tags: ["Media Strategy", "Leadership", "Organizational Communication"],
+      images: [
+        "/images/organization/org-1/img1.jpg",
+        "/images/organization/org-1/img2.jpg",
+        "/images/organization/org-1/img3.jpg",
+      ],
+      supportingDocuments: [
+        {
+          id: "doc-org-3-1",
+          title: "Organization Certificate",
+          type: "pdf",
+          url: "/documents/organizational/himaspal-2021.pdf",
+        },
+      ],
+    },
+    {
+      id: "org-4",
       name: "Head - Education Division (Research & Science)",
       role: "Student Executive Board - Diponegoro University",
       logo: "/logo/logo-bem-undip.jpg",
@@ -697,12 +735,123 @@ export const portfolioData: IPortfolioData = {
       ],
     },
     {
-      id: "org-4",
+      id: "org-5",
+      name: "Head - Education Division (Research & Science)",
+      role: "Student Executive Board - Diponegoro University",
+      logo: "/logo/logo-bem-undip.jpg",
+      startDate: "February 2021",
+      endDate: "January 2022",
+      description:
+        "Led initiatives to promote student participation in research programs and academic competitions.",
+      responsibilities: [
+        "Developed concepts and ensured project delivery by managing deadlines and adjusting workflows",
+        "Coordinated information flow on competitions and research, ensuring all students received timely updates",
+        "Supported student growth by providing platforms to develop research and scientific potential",
+      ],
+      tags: [
+        "Project Coordination",
+        "Academic Program Development",
+        "Leadership",
+      ],
+      images: [
+        "/images/organization/org-3/img1.jpg",
+        "/images/organization/org-3/img2.jpg",
+      ],
+      supportingDocuments: [
+        {
+          id: "doc-org-3-1",
+          title: "Curriculum Overview",
+          type: "pdf",
+          url: "/documents/organization/curriculum.pdf",
+        },
+      ],
+    },
+    {
+      id: "org-6",
+      name: "Maritime Festival Universitas Diponegoro",
+      role: "Vice Chief – Media & Creative",
+      logo: "/logo/logo-marifest.jpg",
+      startDate: "September 2021",
+      endDate: "July 2022",
+      description:
+        "Led creative media strategy and digital engagement initiatives for maritime festival events.",
+      responsibilities: [
+        "Boosted engagement by creating targeted media concepts and campaigns",
+        "RLed media strategy as conceptor for large-scale organizational events",
+        "Optimized social media content flow to expand reach and visibility",
+      ],
+      tags: [
+        "Creative Strategy",
+        "Social Media Management",
+        "Brand Communication",
+      ],
+      images: [
+        "/images/organization/org-2/img1.jpg",
+        "/images/organization/org-2/img2.jpg",
+      ],
+      supportingDocuments: [
+        // {
+        //   id: "doc-org-2-1",
+        //   title: "GitHub Contribution Report",
+        //   type: "pdf",
+        //   url: "/documents/organization/github-report.pdf",
+        // },
+        {
+          id: "doc-org-6-2",
+          title: "Event Record",
+          type: "youtube",
+          url: "https://www.youtube.com/watch?v=Ybauke2tqMI&t=701s",
+        },
+      ],
+    },
+    {
+      id: "org-7",
+      name: "Maritime Festival Universitas Diponegoro",
+      role: "Staff of Media Division",
+      logo: "/logo/logo-marifest.jpg",
+      startDate: "January 2020",
+      endDate: "September 2021",
+      description:
+        "Supported the media division in developing and executing digital communication strategies for Maritime Festival events organized by the Naval Architecture student organization at Diponegoro University. The role focused on creating engaging media content and supporting event promotion across digital platforms. Maritime Festival itself is an annual event organized by the Naval Architecture student community at Diponegoro University.",
+      responsibilities: [
+        "Assisted in developing and implementing creative media concepts to increase audience engagement.",
+        "Created and managed social media content aligned with the division’s communication strategy.",
+        "Supported digital promotion and publication needs across multiple event activities.",
+        "Coordinated with the media team to ensure consistent messaging and timely content delivery.",
+      ],
+      tags: [
+        "Digital Communication",
+        "Social Media Management",
+        "Content Creation",
+        "Event Promotion",
+        "Team Collaboration",
+      ],
+      images: [
+        "/images/organization/org-2/img1.jpg",
+        "/images/organization/org-2/img2.jpg",
+      ],
+      supportingDocuments: [
+        // {
+        //   id: "doc-org-2-1",
+        //   title: "GitHub Contribution Report",
+        //   type: "pdf",
+        //   url: "/documents/organization/github-report.pdf",
+        // },
+        // {
+        //   id: "doc-org-2-2",
+        //   title: "Community Talk: Open Source Best Practices",
+        //   type: "youtube",
+        //   url: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+        // },
+      ],
+    },
+    {
+      id: "org-8",
       name: "Ksatria Hydros – Diponegoro University",
       role: "Electrical Division Staff",
       logo: "/logo/logo-ksatria-hydros.jpg",
-      startDate: "xx",
-      endDate: "xx",
+      startDate: "November 2019",
+      endDate: "March 2022",
       description:
         "Worked on electrical engineering systems for autonomous maritime vehicle development.",
       responsibilities: [
@@ -722,12 +871,12 @@ export const portfolioData: IPortfolioData = {
         "/images/organization/org-4/img2.jpg",
       ],
       supportingDocuments: [
-        {
-          id: "doc-org-4-1",
-          title: "Product Case Study",
-          type: "pdf",
-          url: "/documents/organization/devtools-case-study.pdf",
-        },
+        // {
+        //   id: "doc-org-4-1",
+        //   title: "Product Case Study",
+        //   type: "pdf",
+        //   url: "/documents/organization/devtools-case-study.pdf",
+        // },
       ],
     },
   ],
@@ -740,7 +889,7 @@ export const portfolioData: IPortfolioData = {
       issuer: "Engineering Academy",
       issueDate: "2026",
       description:
-        "Comprehensive training in piping stress analysis using industry-standard software for pressure equipment and piping systems.",
+        "Completion of a professional training program in Basic–Intermediate Level Piping Stress Analysis using CAESAR II and Pipe Data Pro, conducted by Engineering Academy. The program provided a comprehensive foundation in piping stress engineering, covering fundamental theory, system modeling, load case development, and stress evaluation using industry-standard software for pressure equipment and piping systems. The training emphasized hands-on simulation and analytical problem-solving, including load analysis (sustained, thermal, and occasional loads), flexibility assessment, and code compliance principles within multidisciplinary engineering projects.",
       tags: ["Piping", "Stress Analysis", "CAESAR II"],
       group: "Engineering & Energy Systems",
       images: ["/documents/skills/engineer-general/piping-stress-analysis-caesar2/image-1.jpg","/documents/skills/engineer-general/piping-stress-analysis-caesar2/image-2.jpg"],
@@ -766,7 +915,7 @@ export const portfolioData: IPortfolioData = {
       logo: "/logo/logo-se.jpeg",
       issueDate: "2025",
       description:
-        "Advanced course on analyzing and optimizing geothermal power plant performance and efficiency metrics.",
+        "Professional training and certification in Geothermal Power Plant Performance Analysis, awarded with an Excellent result. The program provided a comprehensive understanding of geothermal energy systems, focusing on thermodynamics, steam behavior, and performance evaluation of geothermal power plants. The training covered geothermal energy fundamentals, water–steam phase diagrams, thermodynamic properties, and interpretation of P–T and T–s diagrams. It also addressed single-flash geothermal power plant concepts, steam conditions across the power cycle, and the application of thermodynamic principles to analyze and optimize geothermal power plant performance.",
       tags: ["Geothermal", "Power Plants", "Performance Analysis"],
       group: "Engineering & Energy Systems",
       images: ["/documents/skills/geothermal/geothermal-power-plant-performance-analysis/geothermal-power-plant-performance-analysis-certificate-page-1.jpg","/documents/skills/geothermal/geothermal-power-plant-performance-analysis/geothermal-power-plant-performance-analysis-certificate-page-2.jpg"],
@@ -791,7 +940,7 @@ export const portfolioData: IPortfolioData = {
       logo: "/logo/logo-geoeneris.jpg",
       issueDate: "2025",
       description:
-        "Core principles of geothermal energy systems, resources, and applications in power generation and heating.",
+        "Technical training covering the core principles of geothermal energy systems, resources, and their applications in power generation and heating. The program explored key aspects of geothermal project development, including resource assessment, classification systems, preliminary surveys and desktop studies, 3G surveys and conceptual modeling, well targeting, drilling processes, and project economics. It strengthened foundational knowledge in renewable energy systems and geothermal project planning, from exploration and resource evaluation to economic feasibility analysis.",
       tags: ["Geothermal", "Energy Systems", "Fundamentals"],
       group: "Engineering & Energy Systems",
       images: ["/documents/skills/geothermal/geothermal-international-workshop-certificate/certificate-fundamentals-of-geothermal-energy-page-1.jpg","/documents/skills/geothermal/geothermal-international-workshop-certificate/certificate-fundamentals-of-geothermal-energy-page-2.jpg"],
@@ -816,7 +965,7 @@ export const portfolioData: IPortfolioData = {
       logo: "/logo/logo-alison.jpg",
       issueDate: "2025",
       description:
-        "Foundational course exploring ocean energy resources and geothermal energy conversion technologies.",
+        "Examined geothermal resource characterization, exploration methodologies, and power generation technologies including dry steam, flash, and binary cycle systems. Analyzed reinjection strategies for sustainable reservoir management and evaluated Ocean Thermal Energy Conversion (OTEC) and biomass energy principles in the context of thermodynamic efficiency and environmental sustainability.",
       tags: ["Ocean Energy", "Geothermal", "Renewable Energy"],
       group: "Engineering & Energy Systems",
       images: ["/documents/skills/geothermal/introduction-to-ocean-and-geothermal-energy/introduction-to-ocean-and-geothermal-energy-page-1.jpg","/documents/skills/geothermal/introduction-to-ocean-and-geothermal-energy/introduction-to-ocean-and-geothermal-energy-page-2.jpg","/documents/skills/geothermal/introduction-to-ocean-and-geothermal-energy/introduction-to-ocean-and-geothermal-energy-page-3.jpg"],
@@ -837,7 +986,7 @@ export const portfolioData: IPortfolioData = {
       logo: "/logo/logo-lnt.jpg",
       issueDate: "2025",
       description:
-        "Comprehensive specialization covering petroleum extraction, production, and downstream processing technologies.",
+        "Comprehensive specialization covering petroleum extraction, production, and downstream processing technologies within the petroleum engineering sector. The program provided a broad overview of upstream and midstream oil and gas operations, including exploration, reservoir assessment, drilling, recovery methods, gas extraction, transportation, storage, and utilities management. It also highlighted the role of safety and sustainability in energy operations, while introducing the application of AI-driven approaches to optimize decision-making, operational workflows, and risk management in the oil and gas industry.",
       tags: ["Petroleum", "Engineering", "Oil & Gas"],
       group: "Engineering & Energy Systems",
       images: ["/documents/skills/oil-and-gas/oil-and-gas-pecialization/oil-and-gas-coursera.jpg"],
@@ -863,7 +1012,7 @@ export const portfolioData: IPortfolioData = {
       logo: "/logo/logo-iwcf.jpg",
       issueDate: "2025",
       description:
-        "Certification in well control awareness and procedures essential for offshore and onshore drilling operations safety.",
+        "Certification in IWCF (International Well Control Forum) covering fundamental well control principles and operational safety in drilling activities. The program addressed key aspects of well control, including drilling and well intervention techniques, pressure control, blowout preventer (BOP) systems, and safety management practices. It emphasized operational integrity, risk mitigation, and compliance with international oil and gas industry standards.",
       tags: ["Well Control", "Safety", "Drilling"],
       group: "Engineering & Energy Systems",
       images: ["/documents/skills/oil-and-gas/iwcf/iwcf-lvl1.jpg"],
@@ -886,7 +1035,7 @@ export const portfolioData: IPortfolioData = {
       issuer: "Badan Nasional Sertifikasi Profesi",
       issueDate: "2025",
       description:
-        "Indonesian national certification in general occupational safety and health, recognized by BNSP.",
+        "Indonesian national certification in Occupational Safety and Health (Ahli K3 Umum) recognized by BNSP. The program covered key aspects of workplace safety management, including hazard identification, risk assessment, safety audits, and incident investigation. It also emphasized preventive safety frameworks and the management of high-risk work through systems such as Permit-to-Work (PTW), Job Safety Analysis (JSA), and incident control to support safe and sustainable operations.",
       tags: ["Safety", "K3", "Compliance"],
       group: "Safety, Quality & Compliance",
       images: ["/documents/skills/engineer-general/k3-occupational-health-and-safety-certification/k3-bnsp.jpg","/documents/skills/engineer-general/k3-occupational-health-and-safety-certification/laporan-asesmen.jpg"],
@@ -913,7 +1062,7 @@ export const portfolioData: IPortfolioData = {
       logo: "/logo/logo-iss.jpeg",
       issueDate: "2025",
       description:
-        "Certification in occupational health and safety management systems based on ISO 45001:2018 standard.",
+        "Certification in Occupational Health and Safety Management Systems based on the ISO 45001:2018 standard. The program introduced the principles of establishing and implementing an effective OH&S management system, including hazard identification, risk assessment, legal compliance, and continuous improvement practices. It emphasized systematic approaches to managing workplace safety risks and promoting a safe and healthy working environment in accordance with international occupational safety standards.",
       tags: ["ISO 45001", "Safety", "Management Systems"],
       group: "Safety, Quality & Compliance",
       images: ["/documents/skills/engineer-general/iso-certificate/iso-45001-2018-occupational-health-and-safety-management-system)-awareness.jpg"],
@@ -934,7 +1083,7 @@ export const portfolioData: IPortfolioData = {
       logo: "/logo/logo-iss.jpeg",
       issueDate: "2025",
       description:
-        "Certification demonstrating expertise in quality management systems according to ISO 9001:2015 standards.",
+        "Certification in Quality Management Systems based on the ISO 9001:2015 standard. The program introduced the principles of quality management, including process-based approaches, risk-based thinking, customer focus, and continuous improvement. It emphasized the implementation of structured quality management systems to improve operational efficiency, ensure consistent product and service quality, and enhance organizational performance in accordance with international standards.",
       tags: ["ISO 9001", "Quality", "Management Systems"],
       group: "Safety, Quality & Compliance",
       images: ["/documents/skills/engineer-general/iso-certificate/iso-9001-2015-quality-management-system-awareness.jpg"],
@@ -955,7 +1104,7 @@ export const portfolioData: IPortfolioData = {
       logo: "/logo/logo-iss.jpeg",
       issueDate: "2025",
       description:
-        "Certification in environmental management systems (EMS) based on ISO 14001:2015 standard.",
+        "Certification in Environmental Management Systems (EMS) based on the ISO 14001:2015 standard. The program introduced the principles of environmental management, including environmental impact identification, regulatory compliance, risk-based thinking, and continuous improvement practices. It emphasized systematic approaches to managing environmental responsibilities, improving resource efficiency, and supporting sustainable organizational operations in accordance with international environmental management standards.",
       tags: ["SMK3", "Safety", "Indonesian Standards"],
       group: "Safety, Quality & Compliance",
       images: ["/documents/skills/engineer-general/iso-certificate/iso-14001-2015-environmental-management-system-awareness.jpg"],
@@ -980,7 +1129,7 @@ export const portfolioData: IPortfolioData = {
       logo: "/logo/logo-iss.jpeg",
       issueDate: "2025",
       description:
-        "Certification in occupational safety and health management system based on Indonesian government regulation.",
+        "Certification in Occupational Safety and Health Management Systems based on Indonesian Government Regulation (SMK3 – PP No. 50 Tahun 2012). The program introduced the principles of implementing a structured workplace safety management system, including hazard identification, risk control, regulatory compliance, and continuous improvement. It emphasized systematic approaches to preventing workplace accidents, promoting safe work practices, and ensuring occupational safety performance within organizational operations.",
       tags: ["SMK3", "Safety", "Indonesian Standards"],
       group: "Safety, Quality & Compliance",
       images: ["/documents/skills/engineer-general/iso-certificate/sistem-manajemen-keselamatan-dan-kesehatan-kerja-smk-3-awareness.jpg"],
@@ -1007,7 +1156,7 @@ export const portfolioData: IPortfolioData = {
       logo: "/logo/logo-google.svg.png",
       issueDate: "2025",
       description:
-        "Comprehensive project management specialization covering planning, execution, and delivery methodologies.",
+        "Comprehensive project management specialization covering project planning, execution, and delivery methodologies. The program consisted of seven courses developed by Google, including Foundations of Project Management, Project Initiation, Project Planning, Project Execution, Agile Project Management, and a capstone project applying project management in real-world scenarios. It emphasized hands-on, practice-based learning to build practical skills in initiating, planning, and managing both traditional and agile projects, while strengthening competencies in stakeholder communication, project coordination, and effective project delivery.",
       tags: ["Project Management", "Google", "Leadership"],
       group: "Project, Supply Chain & Operations",
       images: ["/documents/skills/project-management-specialization/project-management-coursera.jpg","/documents/skills/project-management-specialization/google-professional-project-management-badge.jpg","/documents/skills/project-management-specialization/badge.jpg"],
@@ -1034,7 +1183,7 @@ export const portfolioData: IPortfolioData = {
       logo: "/logo/logo-iss.jpeg",
       issueDate: "2025",
       description:
-        "Professional certification in procurement strategies, vendor management, and supply chain optimization.",
+        "Professional certification in procurement management covering procurement strategies, vendor management, and supply chain optimization. The program explored procurement as a strategic organizational function, including needs identification, supplier selection and evaluation, contract negotiation, and sourcing strategies. It also emphasized ethical and sustainable procurement practices and the integration of procurement decisions with organizational objectives to optimize value and supply chain performance.",
       tags: ["Procurement", "Supply Chain", "Operations"],
       group: "Project, Supply Chain & Operations",
       images: ["/documents/skills/engineer-general/purchasing-and-procurement-management/procurement-management-awareness.jpg"],
@@ -1059,7 +1208,7 @@ export const portfolioData: IPortfolioData = {
       logo: "/logo/logo-iss.jpeg",
       issueDate: "2025",
       description:
-        "Certification covering purchasing strategies, supplier relationships, and procurement process optimization.",
+        "Certification covering purchasing strategies, supplier relationship management, and procurement process optimization. The program focused on operational purchasing activities, including purchase requisition processes, supplier communication, purchase order handling, goods receipt, and invoice verification. It emphasized efficient, accurate, and compliant purchasing practices to support smooth day-to-day procurement operations within supply chain management.",
       tags: ["Purchasing", "Supply Chain", "Management"],
       group: "Project, Supply Chain & Operations",
       images: ["/documents/skills/engineer-general/purchasing-and-procurement-management/procurement-management-awareness.jpg"],
@@ -1080,7 +1229,7 @@ export const portfolioData: IPortfolioData = {
       logo: "/logo/logo-iss.jpeg",
       issueDate: "2025",
       description:
-        "Professional training in warehouse operations, inventory control, and logistics management systems.",
+        "Professional training in warehouse operations, inventory control, and logistics management systems. The program covered key warehouse management functions including receiving, inspection, storage, picking, packing, and shipping processes. It also emphasized the importance of efficient warehouse layout design, safety practices, and the use of Warehouse Management Systems (WMS) to improve operational efficiency, inventory accuracy, and material flow within the supply chain.",
       tags: ["Warehouse", "Logistics", "Operations"],
       group: "Project, Supply Chain & Operations",
       images: ["/documents/skills/engineer-general/warehouse-and-inventory-management/warehouse-management-awareness.jpg"],
@@ -1101,7 +1250,7 @@ export const portfolioData: IPortfolioData = {
       logo: "/logo/logo-iss.jpeg",
       issueDate: "2025",
       description:
-        "Certification in inventory control, stock management, and optimization of supply chain resources.",
+        "Certification in inventory control, stock management, and optimization of supply chain resources. The program covered key inventory management principles including stock classification and control methods such as EOQ, ROP, ABC analysis, and FIFO/LIFO. It emphasized maintaining optimal inventory levels, minimizing holding costs, and ensuring material availability through data-driven planning, performance monitoring, and efficient inventory control practices.",
       tags: ["Inventory", "Supply Chain", "Operations"],
       group: "Project, Supply Chain & Operations",
       images: ["/documents/skills/engineer-general/warehouse-and-inventory-management/inventory-management-awareness.jpg"],
@@ -1124,7 +1273,7 @@ export const portfolioData: IPortfolioData = {
       logo: "/logo/logo-progate.webp",
       issueDate: "2022",
       description:
-        "Foundational course covering HTML markup and CSS styling for responsive web design and development.",
+        "Foundational course covering HTML markup and CSS styling for responsive web design and development. The program focused on building a solid foundation in semantic HTML and modern CSS layout techniques such as Flexbox and Grid. It emphasized creating accessible, mobile-friendly web pages, styling reusable components, and applying responsive design principles to develop clean and maintainable front-end user interfaces.",
       tags: ["HTML", "CSS", "Web Development"],
       group: "Digital & Technical Tools",
       images: ["/documents/skills/it-and-programming-language/html.jpg"],
@@ -1145,7 +1294,7 @@ export const portfolioData: IPortfolioData = {
       issuer: "Prograte",
       issueDate: "2022",
       description:
-        "Essential training in Git version control, branching strategies, and collaborative development practices.",
+        "Essential training in Git version control, covering branching strategies and collaborative development practices. The program focused on core source control workflows including branching, merging, pull requests, and conflict resolution. It emphasized maintaining clean commit histories, collaborating within team-based development environments (GitHub/GitLab), and applying best practices for version control and code review.",
       tags: ["Git", "Version Control", "Development Tools"],
       group: "Digital & Technical Tools",
       images: ["/documents/skills/it-and-programming-language/git.jpg"],
@@ -1166,7 +1315,7 @@ export const portfolioData: IPortfolioData = {
       issuer: "Progate",
       issueDate: "2022",
       description:
-        "Core concepts of JavaScr ipt programming including variables, functions, DOM manipulation, and ES6 features.",
+        "Foundational course covering core concepts of JavaScript programming, including variables, functions, DOM manipulation, and modern ES6 features. The program emphasized fundamental programming logic and practical scripting for interactive web development. It also introduced techniques for building dynamic web interfaces and understanding basic front-end application behavior.",
       tags: ["JavaScript", "Web Development", "Programming"],
       group: "Digital & Technical Tools",
       images: ["/documents/skills/it-and-programming-language/js.jpg"],
@@ -1189,7 +1338,7 @@ export const portfolioData: IPortfolioData = {
       logo: "/logo/logo-toefl.png",
       issueDate: "2025",
       description:
-        "Test of English as a Foreign Language certification demonstrating English proficiency for academic and professional contexts. Toefl Score 583",
+        "TOEFL ITP certification issued by Educational Testing Service (ETS), demonstrating English proficiency for academic and professional contexts. The Test of English as a Foreign Language (TOEFL) evaluates key language skills including listening comprehension, structure and written expression, and reading comprehension. Achieved a TOEFL ITP score of 583, reflecting strong English communication abilities for academic study and professional environments.",
       tags: ["TOEFL", "English", "Language"],
       group: "Language & Communication",
       images: ["/documents/skills/language-certificate/toefl-itp-page-3.jpg","/documents/skills/language-certificate/toefl-itp-page-1.jpg","/documents/skills/language-certificate/toefl-itp-page-2.jpg"],
