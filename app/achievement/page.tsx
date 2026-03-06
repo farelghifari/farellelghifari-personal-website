@@ -50,6 +50,7 @@ export default function AchievementsPage() {
                   details={item.details || []}
                   tags={item.tags || []}
                   images={item.images || []}
+                  logo={item.logo}
                   startDate={item.date}
                   endDate={item.date}
                   isOpen={openId === item.id}

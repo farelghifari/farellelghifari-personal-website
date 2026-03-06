@@ -100,8 +100,7 @@ export default function LinksPage() {
                 alt={portfolioData.profile.name}
                 width={112}
                 height={112}
-                className="w-full h-full object-cover"
-                
+                className="w-full h-full object-cover object-[center_-15%]"
               />
             </div>
 

@@ -28,22 +28,22 @@ const allProjects: Project[] = [
   },
   {
     id: 'engineering-1',
-    title: 'Undergraduate Thesis -- Naval Architecture',
+    title: 'Undergraduate Thesis - Naval Architecture',
     role: 'Researcher, Diponegoro University (UNDIP)',
     status: 'Published',
     summary:
       'In-depth engineering analysis on marine vessel systems, focusing on systematic evaluation of structural and operational parameters. Published in an accredited academic journal.',
     tags: ['Naval Architecture', 'Marine Engineering', 'Research', 'Academic Publication'],
     type: 'engineering',
-    externalUrl: 'https://doi.org/10.12962/j25481479.v10i1.4732',
+    // externalUrl: 'https://doi.org/10.12962/j25481479.v10i1.4732',
   },
   {
     id: 'engineering-2',
-    title: 'Research of Marine & Technology -- UNDIP',
-    role: 'Research Team Member, Diponegoro University',
+    title: 'Research of Marine & Technology Diponegoro University',
+    role: 'Senior Electrical Engineer & Safety Consultant',
     status: 'Completed',
     summary:
-      'Collaborative academic research focusing on technical analysis and data-driven investigation of marine engineering systems, bridging theoretical study and applied engineering.',
+      'RMT Solar Boat Team is a solar boat team from Indonesia based at Diponegoro University, developing innovative solar-powered vessel prototypes for international competitions. The team designed and built the Diponegoro 1.0 solar boat project, representing Indonesia at the Monaco Energy Boat Challenge 2023. The project focused on sustainable maritime technology by integrating solar energy systems, efficient propulsion, and engineering innovation. The team was awarded the Innovation Prize: Upcycling for the Ocean for developing boat components using recycled materials derived from used COVID-19 face masks, demonstrating a commitment to circular economy principles and environmentally responsible marine engineering.',
     tags: ['Marine Technology', 'Academic Research', 'Engineering Analysis'],
     type: 'engineering',
   },

@@ -1,7 +1,7 @@
 'use client'
 
 import React, { useState } from 'react'
-import { FileText, Youtube, X } from 'lucide-react'
+import { FileText, Youtube, X, Link as LinkIcon } from 'lucide-react'
 import { cn } from '@/lib/utils'
 import type { SupportingDocument } from '@/data/portfolio'
 
@@ -10,22 +10,32 @@ interface SupportingDocumentsProps {
   title?: string
 }
 
-export function SupportingDocuments({ documents, title = 'Supporting Documents' }: SupportingDocumentsProps) {
+export function SupportingDocuments({
+  documents,
+  title = 'Supporting Documents'
+}: SupportingDocumentsProps) {
+
   const [selectedDoc, setSelectedDoc] = useState<SupportingDocument | null>(null)
   const [isModalOpen, setIsModalOpen] = useState(false)
 
-  if (!documents || documents.length === 0) {
-    return null
-  }
+  if (!documents || documents.length === 0) return null
 
   const getYoutubeEmbedUrl = (url: string) => {
     const videoId = url.includes('youtu.be')
       ? url.split('youtu.be/')[1]?.split('?')[0]
       : url.split('v=')[1]?.split('&')[0]
+
     return `https://www.youtube.com/embed/${videoId}`
   }
 
   const handleDocumentClick = (doc: SupportingDocument) => {
+
+    // 🔹 OPEN LINK / ARTICLE DIRECTLY
+    if (doc.type === 'link' || doc.type === 'external') {
+      window.open(doc.url, '_blank')
+      return
+    }
+
     setSelectedDoc(doc)
     setIsModalOpen(true)
   }
@@ -34,12 +44,14 @@ export function SupportingDocuments({ documents, title = 'Supporting Documents' 
     <>
       {/* Supporting Documents Section */}
       <div className="rounded-lg border border-border bg-card/50 backdrop-blur-sm p-4">
+
         <h4 className="text-sm font-semibold text-foreground mb-4 flex items-center gap-2">
           <FileText size={16} className="text-primary" />
           {title}
         </h4>
 
         <div className="space-y-2">
+
           {documents.map((doc) => (
             <button
               key={doc.id}
@@ -51,54 +63,83 @@ export function SupportingDocuments({ documents, title = 'Supporting Documents' 
                 'transition-all duration-200 group text-left'
               )}
             >
-              {doc.type === 'pdf' ? (
-                <FileText size={18} className="text-red-500 flex-shrink-0 group-hover:text-red-600" />
-              ) : (
-                <Youtube size={18} className="text-red-600 flex-shrink-0 group-hover:text-red-700" />
+
+              {/* ICON */}
+              {doc.type === 'pdf' && (
+                <FileText size={18} className="text-red-500 flex-shrink-0" />
               )}
+
+              {doc.type === 'youtube' && (
+                <Youtube size={18} className="text-red-600 flex-shrink-0" />
+              )}
+
+              {(doc.type === 'link' || doc.type === 'external') && (
+                <LinkIcon size={18} className="text-blue-500 flex-shrink-0" />
+              )}
+
               <div className="flex-1 min-w-0">
                 <p className="text-sm text-foreground truncate group-hover:text-primary transition-colors">
                   {doc.title}
                 </p>
+
                 <p className="text-xs text-foreground/50">
-                  {doc.type === 'pdf' ? 'PDF Document' : 'YouTube Video'}
+                  {doc.type === 'pdf' && 'PDF Document'}
+                  {doc.type === 'youtube' && 'YouTube Video'}
+                  {(doc.type === 'link' || doc.type === 'external') && 'Open Article'}
                 </p>
               </div>
-              <span className="text-xs text-foreground/50 flex-shrink-0 group-hover:text-foreground/70">
-                {doc.type === 'pdf' ? 'View' : 'Watch'}
+
+              <span className="text-xs text-foreground/50">
+                {doc.type === 'youtube' ? 'Watch' : 'View'}
               </span>
+
             </button>
           ))}
+
         </div>
       </div>
 
-      {/* Modal for PDF/Video Viewer */}
+      {/* MODAL */}
       {isModalOpen && selectedDoc && (
-        <div className="fixed inset-0 bg-black/50 backdrop-blur-sm z-50 flex items-center justify-center p-4"
-        onClick={() => setIsModalOpen(false)}>
-          <div className="bg-background rounded-lg border border-border max-w-2xl w-full max-h-[90vh] overflow-hidden flex flex-col">
-            {/* Modal Header */}
+
+        <div
+          className="fixed inset-0 bg-black/50 backdrop-blur-sm z-50 flex items-center justify-center p-4"
+          onClick={() => setIsModalOpen(false)}
+        >
+
+          <div
+            className="bg-background rounded-lg border border-border max-w-4xl w-full max-h-[90vh] overflow-hidden flex flex-col"
+            onClick={(e) => e.stopPropagation()}
+          >
+
+            {/* HEADER */}
             <div className="flex items-center justify-between p-4 border-b border-border">
               <h3 className="text-lg font-semibold text-foreground truncate">
                 {selectedDoc.title}
               </h3>
+
               <button
                 onClick={() => setIsModalOpen(false)}
-                className="p-2 hover:bg-primary/10 rounded-lg transition-colors text-foreground/70 hover:text-foreground"
+                className="p-2 hover:bg-primary/10 rounded-lg transition-colors"
               >
                 <X size={20} />
               </button>
             </div>
 
-            {/* Modal Content */}
+            {/* CONTENT */}
             <div className="flex-1 overflow-auto bg-background/50">
-              {selectedDoc.type === 'pdf' ? (
+
+              {/* PDF */}
+              {selectedDoc.type === 'pdf' && (
                 <iframe
                   src={`${selectedDoc.url}#toolbar=0`}
-                  className="w-full h-full min-h-96"
+                  className="w-full h-full min-h-[500px]"
                   title={selectedDoc.title}
                 />
-              ) : (
+              )}
+
+              {/* YOUTUBE */}
+              {selectedDoc.type === 'youtube' && (
                 <div className="w-full h-full flex items-center justify-center p-4">
                   <div className="w-full max-w-4xl aspect-video">
                     <iframe
@@ -114,10 +155,13 @@ export function SupportingDocuments({ documents, title = 'Supporting Documents' 
                   </div>
                 </div>
               )}
+
             </div>
           </div>
+
         </div>
       )}
+
     </>
   )
 }

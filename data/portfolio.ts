@@ -181,9 +181,7 @@ export const portfolioData: IPortfolioData = {
             "Coordinated community development programs with village authorities",
           ],
           tags: [
-            "Environmental Sustainability",
-            "Environmental Sustainabilityt",
-            "Program Coordination",
+            "Community Development", "Environmental Sustainability", "Occupational Safety", "Sustainable Agriculture", "Rural Development","Program Coordination",
           ],
           images: ["/images/volunteering/vol-1/img1.jpg"],
         },
@@ -210,6 +208,7 @@ export const portfolioData: IPortfolioData = {
       achievements: [
         {
           id: "ach-1",
+          logo: "logo/logo-mebc.png",
           title: "Innovation Prize (Upcycling For The Ocean) on Monaco Energy Boat Challenge 2023",
           date: "2023",
           category: "Project Excellence",
@@ -225,6 +224,7 @@ export const portfolioData: IPortfolioData = {
         },
         {
           id: "ach-2",
+          logo: "logo/logo-kkctbn.png",
           title: "Competition Finalist of Kontes Kapal Cepat Tidak Berawak Nasional (KKCTBN) 2022",
           date: "2022",
           category: "Project Excellence",
@@ -240,6 +240,7 @@ export const portfolioData: IPortfolioData = {
         },
          {
           id: "ach-3",
+          logo: "logo/logo-comet.png",
           title: "Competition Finalist of Boat Race Competition COMET 3.0 Nasional 2022",
           date: "2022",
           category: "Project Excellence",
@@ -255,6 +256,7 @@ export const portfolioData: IPortfolioData = {
         },
         {
           id: "ach-4",
+          logo: "logo/diponegoro-university.png",
           title: "Appointed as the Head of The Project in the Anniversary Event of the Naval Engineering Department in 2020, impacting 200+ students and lecturers and reach 1.340+ viewers on Youtube",
           date: "2020",
           category: "Project Excellence",
@@ -376,7 +378,8 @@ export const portfolioData: IPortfolioData = {
       // ],
       achievements: [
         {
-          id: "ach-3",
+          id: "ach-5",
+          logo: "logo/logo-ispo.png",
           title: "Honourable Mention Indonesian Science Project Olympiad",
           date: "2017",
           category: "Academic Excellence",

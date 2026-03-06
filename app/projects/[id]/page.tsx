@@ -21,7 +21,7 @@ interface Project {
   supportingDocuments?: Array<{
     id: string
     title: string
-    type: 'pdf' | 'youtube' | 'link' | 'external'
+    type: 'pdf' | 'youtube' | 'link' | 'external' 
     url: string
   }>
 }
@@ -46,23 +46,23 @@ const allProjects: Project[] = [
 The business focuses on sustainable sourcing, ethical trading practices, and community engagement through coffee culture.`,
     tags: ['Entrepreneurship', 'Business Operations', 'Leadership', 'Brand Development', 'F&B'],
     images: [
-      '/images/projects/business-1/cafe-interior.jpg',
-      '/images/projects/business-1/coffee-preparation.jpg',
-      '/images/projects/business-1/storefront.jpg'
+      // '/images/projects/business-1/cafe-interior.jpg',
+      // '/images/projects/business-1/coffee-preparation.jpg',
+      // '/images/projects/business-1/storefront.jpg'
     ],
     supportingDocuments: [
-      {
-        id: 'doc-biz-1-1',
-        title: 'Business Plan',
-        type: 'pdf',
-        url: '/documents/projects/business-plan.pdf'
-      },
-      {
-        id: 'doc-biz-1-2',
-        title: 'Cafe Tour Video',
-        type: 'youtube',
-        url: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'
-      }
+      // {
+      //   id: 'doc-biz-1-1',
+      //   title: 'Business Plan',
+      //   type: 'pdf',
+      //   url: '/documents/projects/business-plan.pdf'
+      // },
+      // {
+      //   id: 'doc-biz-1-2',
+      //   title: 'Cafe Tour Video',
+      //   type: 'youtube',
+      //   url: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'
+      // }
     ]
   },
   {
@@ -83,33 +83,33 @@ The business focuses on sustainable sourcing, ethical trading practices, and com
 The thesis was published in an accredited academic journal, contributing to the field of naval architecture and marine engineering. The research bridged theoretical study with practical application in marine vessel design and operations.`,
     tags: ['Naval Architecture', 'Marine Engineering', 'Research', 'Academic Publication'],
     images: [
-      '/images/projects/engineering-1/vessel-design.jpg',
-      '/images/projects/engineering-1/analysis-diagram.jpg',
-      '/images/projects/engineering-1/research-lab.jpg'
+      // '/images/projects/engineering-1/vessel-design.jpg',
+      // '/images/projects/engineering-1/analysis-diagram.jpg',
+      // '/images/projects/engineering-1/research-lab.jpg'
     ],
     supportingDocuments: [
       {
         id: 'doc-eng-1-1',
         title: 'Published Paper',
-        type: 'pdf',
-        url: '/documents/projects/thesis-paper.pdf'
-      },
-      {
-        id: 'doc-eng-1-2',
-        title: 'Research DOI',
-        type: 'external',
+        type: 'link',
         url: 'https://doi.org/10.12962/j25481479.v10i1.4732'
-      }
+      },
+      // {
+      //   id: 'doc-eng-1-2',
+      //   title: 'Research DOI',
+      //   type: 'external',
+      //   url: 'https://doi.org/10.12962/j25481479.v10i1.4732'
+      // },
     ],
     externalUrl: 'https://doi.org/10.12962/j25481479.v10i1.4732',
   },
   {
     id: 'engineering-2',
     title: 'Research of Marine & Technology - Diponegoro University',
-    role: 'Research Team Member, Diponegoro University',
+    role: 'Senior Electrical Engineer & Safety Consultant',
     status: 'Completed',
     summary:
-      'Collaborative academic research focusing on technical analysis and data-driven investigation of marine engineering systems, bridging theoretical study and applied engineering.',
+      'RMT Solar Boat Team is a solar boat team from Indonesia based at Diponegoro University, developing innovative solar-powered vessel prototypes for international competitions. The team designed and built the Diponegoro 1.0 solar boat project, representing Indonesia at the Monaco Energy Boat Challenge 2023. The project focused on sustainable maritime technology by integrating solar energy systems, efficient propulsion, and engineering innovation. The team was awarded the Innovation Prize: Upcycling for the Ocean for developing boat components using recycled materials derived from used COVID-19 face masks, demonstrating a commitment to circular economy principles and environmentally responsible marine engineering.',
     description: `This collaborative research project at Diponegoro University focused on advancing marine engineering knowledge through rigorous academic investigation. Key aspects include:
 
 • Team Collaboration - Working with research team members and academic advisors
@@ -122,17 +122,17 @@ The thesis was published in an accredited academic journal, contributing to the 
 The project successfully bridged the gap between theoretical study and applied engineering, providing practical insights for marine technology development.`,
     tags: ['Marine Technology', 'Academic Research', 'Engineering Analysis'],
     images: [
-      '/images/projects/engineering-2/team-lab-work.jpg',
-      '/images/projects/engineering-2/experiment-setup.jpg',
-      '/images/projects/engineering-2/data-presentation.jpg'
+      // '/images/projects/engineering-2/team-lab-work.jpg',
+      // '/images/projects/engineering-2/experiment-setup.jpg',
+      // '/images/projects/engineering-2/data-presentation.jpg'
     ],
     supportingDocuments: [
-      {
-        id: 'doc-eng-2-1',
-        title: 'Research Report',
-        type: 'pdf',
-        url: '/documents/projects/marine-research-report.pdf'
-      }
+      // {
+      //   id: 'doc-eng-2-1',
+      //   title: 'Research Report',
+      //   type: 'pdf',
+      //   url: '/documents/projects/marine-research-report.pdf'
+      // }
     ]
   },
 ]

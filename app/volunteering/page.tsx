@@ -65,6 +65,7 @@ export default function VolunteeringPage() {
                   details={item.impact || []}
                   tags={item.tags || []}
                   images={item.images || []}
+                  logo={item.logo}
                   startDate={item.startDate}
                   endDate={item.endDate}
                 />

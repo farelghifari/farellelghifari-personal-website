@@ -88,18 +88,18 @@ const businessProjects: ProjectCardProps[] = [
 const engineeringProjects: ProjectCardProps[] = [
   {
     id: 'engineering-1',
-    title: 'Undergraduate Thesis -- Naval Architecture',
-    role: 'Researcher, Diponegoro University (UNDIP)',
+    title: 'Undergraduate Thesis Naval Architecture',
+    role: 'Main Researcher, Diponegoro University',
     status: 'Published',
     summary:
       'In-depth engineering analysis on marine vessel systems, focusing on systematic evaluation of structural and operational parameters. Published in an accredited academic journal.',
     tags: ['Naval Architecture', 'Marine Engineering', 'Research', 'Academic Publication'],
-    externalUrl: 'https://doi.org/10.12962/j25481479.v10i1.4732',
+    // externalUrl: 'https://doi.org/10.12962/j25481479.v10i1.4732',
   },
   {
     id: 'engineering-2',
-    title: 'Research of Marine & Technology -- UNDIP',
-    role: 'Research Team Member, Diponegoro University',
+    title: 'Research of Marine & Technology Diponegoro University',
+    role: 'Senior Electrical Engineer & Safety Consultant',
     status: 'Completed',
     summary:
       'Collaborative academic research focusing on technical analysis and data-driven investigation of marine engineering systems, bridging theoretical study and applied engineering.',

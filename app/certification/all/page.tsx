@@ -10,7 +10,7 @@ import { AccordionItem } from '@/components/accordion-item'
 
 
 const groupDescriptions: Record<string, string> = {
-  'Engineering & Energy Systems': 'Advanced technical expertise in piping systems and energy infrastructure.',
+  'Engineering & Energy Systems': 'Technical understanding of energy infrastructure and engineering systems.',
   'Safety, Quality & Compliance': 'Commitment to industry standards, safety protocols, and quality assurance.',
   'Project, Supply Chain & Operations': 'Strategic management of resources and operational excellence.',
   'Digital & Technical Tools': 'Proficiency in industry-leading software and digital transformation tools.',
