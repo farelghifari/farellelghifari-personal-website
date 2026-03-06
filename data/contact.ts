@@ -23,7 +23,7 @@ export const contactInfo: IContactInfo = {
   phone: "+62 813 4686 4377",
   location: "Jakarta - Indonesia",
   timezone: "WIB (UTC+7)",
-  bio: "Available for consulting and collaboration. Let's build something amazing together!",
+  bio: "Currently open to career opportunities and collaborations. Let's connect and build something meaningful together.",
   profileImage: "/images/profile-picture.png",
   socialLinks: [
     {

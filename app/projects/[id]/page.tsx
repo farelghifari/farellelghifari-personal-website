@@ -67,7 +67,7 @@ The business focuses on sustainable sourcing, ethical trading practices, and com
   },
   {
     id: 'engineering-1',
-    title: 'Undergraduate Thesis -- Naval Architecture',
+    title: 'Undergraduate Thesis - Naval Architecture',
     role: 'Researcher, Diponegoro University (UNDIP)',
     status: 'Published',
     summary:
@@ -105,7 +105,7 @@ The thesis was published in an accredited academic journal, contributing to the 
   },
   {
     id: 'engineering-2',
-    title: 'Research of Marine & Technology -- UNDIP',
+    title: 'Research of Marine & Technology Diponegoro University',
     role: 'Research Team Member, Diponegoro University',
     status: 'Completed',
     summary:
