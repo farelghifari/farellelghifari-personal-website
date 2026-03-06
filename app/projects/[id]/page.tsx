@@ -105,7 +105,7 @@ The thesis was published in an accredited academic journal, contributing to the 
   },
   {
     id: 'engineering-2',
-    title: 'Research of Marine & Technology Diponegoro University',
+    title: 'Research of Marine & Technology - Diponegoro University',
     role: 'Research Team Member, Diponegoro University',
     status: 'Completed',
     summary:

@@ -117,7 +117,7 @@ export interface IPortfolioData {
 export const portfolioData: IPortfolioData = {
   profile: {
     name: "Farell Elghifari Putratama",
-    title: "Multidisciplinary Engineer Bridging Engineering, Technology & Business",
+    title: "Multidisciplinary Engineer Bridging Engineering, Technology & Business.",
     bio: "Multidisciplinary graduate with a background in naval architecture and experience across engineering, energy systems, and technology-driven environments. Developed analytical, technical, and problem-solving skills through academic projects, internships, and professional training. Interested in exploring the intersection of engineering, technology, and business to contribute to innovative and impactful solutions across industries.",
     profileImage: "/images/profile-picture.png",
   },
@@ -157,7 +157,7 @@ export const portfolioData: IPortfolioData = {
           url: "/documents/educational/bachelor-degree-diploma-suplement-skpi.pdf",
         },
         {
-          id: "doc-edu-1-3",
+          id: "doc-edu-1-4",
           title: "Academic Transcript",
           type: "pdf",
           url: "/documents/educational/transcript.pdf",
@@ -181,7 +181,9 @@ export const portfolioData: IPortfolioData = {
             "Coordinated community development programs with village authorities",
           ],
           tags: [
-            "Community Development","Environmental Sustainability","Safety Awareness Training","Program Coordination",
+            "Environmental Sustainability",
+            "Environmental Sustainabilityt",
+            "Program Coordination",
           ],
           images: ["/images/volunteering/vol-1/img1.jpg"],
         },
@@ -205,68 +207,38 @@ export const portfolioData: IPortfolioData = {
         //   images: ["/images/volunteering/vol-2/img1.jpg"],
         // },
       ],
-      achievements: [
-        {
-          id: "ach-1",
-          title: "Innovation Prize (Upcycling For The Ocean) on Monaco Energy Boat Challenge 2023",
-          date: "2023",
-          category: "Project Excellence",
-          description: "RMT Solar Boat Team is one of the solar boat teams from Indonesia, Namely from the Diponegoro University, With the solar-powered ship prototype project that we developed and prepared for Monaco Solar & Energy Boat Challenge.",
-          details: [
-            // "Maintained 3.8+ GPA throughout program",
-            // "Published research paper on web optimization",
-            // "Awarded scholarship for academic excellence",
-            // "Selected as student mentor for incoming cohort",
-          ],
-          tags: ["Electrical System Design", "BLDC Motor Analysis","Circuit Engineering"],
-          images: ["/images/achievement/ach-1/award.jpg"],
-        },
-        {
-          id: "ach-2",
-          title: "Competition Finalist of Kontes Kapal Cepat Tidak Berawak Nasional (KKCTBN) 2022",
-          date: "2022",
-          category: "Project Excellence",
-          description: "Finalist of Kontes Kapal Cepat Tidak Berawak Nasional (KKCTBN) 2022, contributing to the design and development of an autonomous fast vessel prototype.",
-          details: [
-            // "Built real-time collaborative web platform",
-            // "Received first place among 50+ projects",
-            // "Featured in university tech showcase",
-            // "Later commercialized as successful startup",
-          ],
-          tags: ["Project", "Innovation", "Circuit Engineering"],
-          images: ["/images/achievement/ach-2/award.jpg"],
-        },
-         {
-          id: "ach-3",
-          title: "Competition Finalist of Boat Race Competition COMET 3.0 Nasional 2022",
-          date: "2022",
-          category: "Project Excellence",
-          description: "Finalist of Boat Race Competition COMET 3.0 Nasional 2022, competing in a national boat design and racing competition.",
-          details: [
-            // "Built real-time collaborative web platform",
-            // "Received first place among 50+ projects",
-            // "Featured in university tech showcase",
-            // "Later commercialized as successful startup",
-          ],
-          tags: ["Project", "Innovation", "Circuit Engineering", "Electrical System Design"],
-          images: ["/images/achievement/ach-2/award.jpg"],
-        },
-        {
-          id: "ach-4",
-          title: "Appointed as the Head of The Project in the Anniversary Event of the Naval Engineering Department in 2020, impacting 200+ students and lecturers and reach 1.340+ viewers on Youtube",
-          date: "2020",
-          category: "Project Excellence",
-          description: "Served as Project Head for the 2020 Naval Engineering Department Anniversary Event, leading the event planning and execution while engaging 200+ participants and reaching 1,340+ viewers on YouTube.",
-          details: [
-            // "Built real-time collaborative web platform",
-            // "Received first place among 50+ projects",
-            // "Featured in university tech showcase",
-            // "Later commercialized as successful startup",
-          ],
-          tags: ["Leadership", "Innovation", "Project Coordination", "Team Collaboration", "Public Communication  "],
-          images: ["/images/achievement/ach-2/award.jpg"],
-        },
-      ],
+      // achievements: [
+      //   {
+      //     id: "ach-1",
+      //     title: "Dean's List Recognition",
+      //     date: "2021",
+      //     category: "Academic Excellence",
+      //     description: "Recognized for outstanding academic performance and research contributions.",
+      //     details: [
+      //       "Maintained 3.8+ GPA throughout program",
+      //       "Published research paper on web optimization",
+      //       "Awarded scholarship for academic excellence",
+      //       "Selected as student mentor for incoming cohort",
+      //     ],
+      //     tags: ["Academic", "Achievement", "Recognition"],
+      //     images: ["/images/achievement/ach-1/award.jpg"],
+      //   },
+      //   {
+      //     id: "ach-2",
+      //     title: "Best Capstone Project Award",
+      //     date: "2022",
+      //     category: "Project Excellence",
+      //     description: "Won award for innovative capstone project in web technology category.",
+      //     details: [
+      //       "Built real-time collaborative web platform",
+      //       "Received first place among 50+ projects",
+      //       "Featured in university tech showcase",
+      //       "Later commercialized as successful startup",
+      //     ],
+      //     tags: ["Project", "Innovation", "Award"],
+      //     images: ["/images/achievement/ach-2/award.jpg"],
+      //   },
+      // ],
     },
     {
       id: "edu-2",
@@ -423,7 +395,7 @@ export const portfolioData: IPortfolioData = {
     },
     {
       id: "exp-2",
-      company: "Biro Klasifikasi Indonesia (BKI)",
+      company: "Biro Klasifikasi Indonesia (BKI).",
       logo: "/logo/logo-bki.png",
       position: "Junior Surveyor Internship",
       startDate: "March 2023",
@@ -573,13 +545,13 @@ export const portfolioData: IPortfolioData = {
   organization: [
     {
       id: "org-1",
-      name: "Research of Marine Technology",
+      name: "Research of Marine Technology Diponegoro University",
       role: "Senior Electrical Engineer & Safety Consultant",
       logo: "/logo/logo-rmt.png",
       startDate: "March 2022",
       endDate: "July 2024",
       description:
-        "RMT Solar Boat Team is one of the solar boat teams from Indonesia, Namely from the Diponegoro University, With the solar-powered ship prototype project that we developed and prepared for Monaco Solar & Energy Boat Challenge.",
+        "RMT Solar Boat Team is a solar boat team from Indonesia based at Diponegoro University, developing innovative solar-powered vessel prototypes for international competitions. The team designed and built the Diponegoro 1.0 solar boat project, representing Indonesia at the Monaco Energy Boat Challenge 2023. The project focused on sustainable maritime technology by integrating solar energy systems, efficient propulsion, and engineering innovation. The team was awarded the Innovation Prize: Upcycling for the Ocean for developing boat components using recycled materials derived from used COVID-19 face masks, demonstrating a commitment to circular economy principles and environmentally responsible marine engineering.",
       responsibilities: [
         "Designed vessel electrical wiring diagrams and integrated sensor systems to ensure operational reliability",
         "Advised on vessel safety and fail-safe systems, ensuring compliance with international competition standards",
@@ -637,17 +609,23 @@ export const portfolioData: IPortfolioData = {
           type: "youtube",
           url: "https://www.youtube.com/watch?v=0YK2a0b12G0",
         },
+        {
+          id: "doc-org-5-8",
+          title: "Competition Certificate",
+          type: "pdf",
+          url: "/documents/competition/sertifikat-monaco-energy-boat-challenge.pdf",
+        },
       ],
     },
     {
       id: "org-2",
-      name: "Student Executive Board – Naval Architecture UNDIP",
-      logo: "/logo/logo-himaspal.jpg",
+      name: "Student Executive Board of Naval Architecture Diponegoro University",
+      logo: "/logo/logo-himaspal.png",
       role: "Head of Media & Information Unit",
       startDate: "January 2022",
       endDate: "May 2023",
       description:
-        "Led the media and information division responsible for managing organizational communication systems and digital content strategies.",
+        "Led the Media and Information Unit of the Student Executive Board of Naval Architecture at Diponegoro University (HIMASPAL FT UNDIP), responsible for managing organizational communication systems and digital media strategies. The role involved designing and implementing a structured media workflow system to support efficient information dissemination and coordination across organizational activities. Also responsible for overseeing the performance of the media division, ensuring all communication and media-related tasks were executed effectively, while developing collaboration concepts and coordination frameworks to maximize team performance and achieve organizational objectives with qualified human resources.",
       responsibilities: [
         "Designed structured media workflow systems",
         "Managed media team coordination and communication strategy",
@@ -675,8 +653,8 @@ export const portfolioData: IPortfolioData = {
     },
     {
       id: "org-3",
-      name: "Student Executive Board – Naval Architecture UNDIP",
-      logo: "/logo/logo-himaspal.jpg",
+      name: "Student Executive Board of Naval Architecture Diponegoro University",
+      logo: "/logo/logo-himaspal.png",
       role: "Staff of Interest and Talent",
       startDate: "October 2020",
       endDate: "January 2022",
@@ -684,8 +662,8 @@ export const portfolioData: IPortfolioData = {
         "Contributed to the Interest and Talent Division in supporting student development initiatives and organizational activities within the Naval Architecture Student Executive Board. The role involved assisting in the implementation of internal media systems and supporting team coordination for various organizational programs.",
       responsibilities: [
         "Assisted in implementing the organizational media flow system according to the established plan.",
-"Carried out assigned tasks related to media and communication activities under division supervision.",
-"Supported coordination efforts among team members to facilitate effective collaboration and achieve organizational objectives.",
+        "Carried out assigned tasks related to media and communication activities under division supervision.",
+        "Supported coordination efforts among team members to facilitate effective collaboration and achieve organizational objectives.",
       ],
       tags: ["Media Strategy", "Leadership", "Organizational Communication"],
       images: [
@@ -704,13 +682,13 @@ export const portfolioData: IPortfolioData = {
     },
     {
       id: "org-4",
-      name: "Head - Education Division (Research & Science)",
-      role: "Student Executive Board - Diponegoro University",
-      logo: "/logo/logo-bem-undip.jpg",
+      name: "Student Executive Board of Diponegoro University",
+      role: "Head of Education Division at Research & Science",
+      logo: "/logo/logo-bem-undip.png",
       startDate: "February 2021",
       endDate: "January 2022",
       description:
-        "Led initiatives to promote student participation in research programs and academic competitions.",
+        "Led the Education Division within the Research and Sciences department of the Student Executive Board at Diponegoro University, focusing on encouraging student participation in research activities and academic competitions. The role involved developing program concepts, managing project timelines, and coordinating division initiatives to ensure activities were executed effectively and on schedule. Also responsible for managing the dissemination of information related to research opportunities and competitions, while creating platforms and initiatives aimed at developing students’ potential in research and scientific fields.",
       responsibilities: [
         "Developed concepts and ensured project delivery by managing deadlines and adjusting workflows",
         "Coordinated information flow on competitions and research, ensuring all students received timely updates",
@@ -727,26 +705,26 @@ export const portfolioData: IPortfolioData = {
       ],
       supportingDocuments: [
         {
-          id: "doc-org-3-1",
-          title: "Curriculum Overview",
+          id: "doc-org-5-1",
+          title: "Organization Certificate",
           type: "pdf",
-          url: "/documents/organization/curriculum.pdf",
+          url: "/documents/organizational/bem-undip-2021-head-of-education-division.pdf",
         },
       ],
     },
     {
       id: "org-5",
-      name: "Head - Education Division (Research & Science)",
-      role: "Student Executive Board - Diponegoro University",
-      logo: "/logo/logo-bem-undip.jpg",
-      startDate: "February 2021",
-      endDate: "January 2022",
+      name: "Student Executive Board of Diponegoro University",
+      role: "Staff of Research and Sciences",
+      logo: "/logo/logo-bem-undip.png",
+      startDate: "February 2020",
+      endDate: "February 2021",
       description:
-        "Led initiatives to promote student participation in research programs and academic competitions.",
+        "Contributed to the Research and Sciences Division of the Student Executive Board at Diponegoro University by supporting initiatives aimed at increasing student participation in research activities and academic competitions. The role involved assisting in the execution of division programs, ensuring project activities followed established schedules and were completed efficiently. Also supported the dissemination of information related to research opportunities and competitions while helping facilitate programs designed to develop students’ research capabilities and scientific potential within the university.",
       responsibilities: [
-        "Developed concepts and ensured project delivery by managing deadlines and adjusting workflows",
-        "Coordinated information flow on competitions and research, ensuring all students received timely updates",
-        "Supported student growth by providing platforms to develop research and scientific potential",
+        "Assisted in executing division project plans by following established schedules and completing assigned tasks on time.",
+        "Supported the dissemination of information related to research opportunities and academic competitions for university students.",
+        "Helped facilitate activities aimed at developing students’ research and scientific potential under division supervision.",
       ],
       tags: [
         "Project Coordination",
@@ -759,10 +737,10 @@ export const portfolioData: IPortfolioData = {
       ],
       supportingDocuments: [
         {
-          id: "doc-org-3-1",
-          title: "Curriculum Overview",
+          id: "doc-org-5-1",
+          title: "Organization Certificate",
           type: "pdf",
-          url: "/documents/organization/curriculum.pdf",
+          url: "/documents/organizational/bem-undip-2020-staff-of-education-division.pdf",
         },
       ],
     },
@@ -774,7 +752,7 @@ export const portfolioData: IPortfolioData = {
       startDate: "September 2021",
       endDate: "July 2022",
       description:
-        "Led creative media strategy and digital engagement initiatives for maritime festival events.",
+        "Led the Media and Creative Division for Maritime Festival Universitas Diponegoro, responsible for developing creative media strategies and strengthening digital engagement for event promotion. The role involved designing innovative media concepts and audience-targeting strategies to enhance the organization’s visibility across digital platforms. Also served as the main creative conceptor for festival events, ensuring that media strategies, branding, and information delivery through social media were consistent, engaging, and aligned with the overall objectives of the organization.",
       responsibilities: [
         "Boosted engagement by creating targeted media concepts and campaigns",
         "RLed media strategy as conceptor for large-scale organizational events",
@@ -791,13 +769,13 @@ export const portfolioData: IPortfolioData = {
       ],
       supportingDocuments: [
         // {
-        //   id: "doc-org-2-1",
-        //   title: "GitHub Contribution Report",
+        //   id: "doc-org-6-1",
+        //   title: "Organization Certificate",
         //   type: "pdf",
-        //   url: "/documents/organization/github-report.pdf",
+        //   url: "",
         // },
         {
-          id: "doc-org-6-2",
+          id: "doc-org-6-1",
           title: "Event Record",
           type: "youtube",
           url: "https://www.youtube.com/watch?v=Ybauke2tqMI&t=701s",
@@ -812,7 +790,7 @@ export const portfolioData: IPortfolioData = {
       startDate: "January 2020",
       endDate: "September 2021",
       description:
-        "Supported the media division in developing and executing digital communication strategies for Maritime Festival events organized by the Naval Architecture student organization at Diponegoro University. The role focused on creating engaging media content and supporting event promotion across digital platforms. Maritime Festival itself is an annual event organized by the Naval Architecture student community at Diponegoro University.",
+        "Supported the Media Division in developing and executing digital communication strategies for Maritime Festival Universitas Diponegoro, an annual event organized by the Naval Architecture student community. The role focused on assisting the implementation of creative media concepts and strengthening audience engagement through digital platforms. Responsibilities included supporting the development of social media content, coordinating publication needs for event promotion, and contributing to the execution of media strategies to ensure consistent communication and effective outreach for festival activities.",
       responsibilities: [
         "Assisted in developing and implementing creative media concepts to increase audience engagement.",
         "Created and managed social media content aligned with the division’s communication strategy.",
@@ -853,7 +831,7 @@ export const portfolioData: IPortfolioData = {
       startDate: "November 2019",
       endDate: "March 2022",
       description:
-        "Worked on electrical engineering systems for autonomous maritime vehicle development.",
+        "Worked as part of the Electrical Division in the Ksatria Hydros team at Diponegoro University, contributing to the development of electrical systems for an autonomous maritime vehicle. The role involved analyzing and designing key electrical components, including BLDC motor requirements, power distribution, and controller compatibility to ensure optimal vessel performance. Responsibilities also included designing the vessel’s electrical wiring architecture, developing circuit diagrams, and integrating protection and monitoring systems to support safe, efficient, and reliable vessel operations.",
       responsibilities: [
         // "Advised on product roadmap and features",
         // "Conducted user interviews with 50+ developers",
