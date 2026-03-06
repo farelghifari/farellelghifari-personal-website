@@ -139,9 +139,9 @@ export const portfolioData: IPortfolioData = {
         "Technical Drafting",
       ],
       images: [
-        "/images/education/edu-1/img1.jpg",
-        "/images/education/edu-1/img2.jpg",
-        "/images/education/edu-1/img3.jpg",
+        // "/images/education/edu-1/img1.jpg",
+        // "/images/education/edu-1/img2.jpg",
+        // "/images/education/edu-1/img3.jpg",
       ],
       supportingDocuments: [
         {
@@ -207,38 +207,98 @@ export const portfolioData: IPortfolioData = {
         //   images: ["/images/volunteering/vol-2/img1.jpg"],
         // },
       ],
-      // achievements: [
-      //   {
-      //     id: "ach-1",
-      //     title: "Dean's List Recognition",
-      //     date: "2021",
-      //     category: "Academic Excellence",
-      //     description: "Recognized for outstanding academic performance and research contributions.",
-      //     details: [
-      //       "Maintained 3.8+ GPA throughout program",
-      //       "Published research paper on web optimization",
-      //       "Awarded scholarship for academic excellence",
-      //       "Selected as student mentor for incoming cohort",
-      //     ],
-      //     tags: ["Academic", "Achievement", "Recognition"],
-      //     images: ["/images/achievement/ach-1/award.jpg"],
-      //   },
-      //   {
-      //     id: "ach-2",
-      //     title: "Best Capstone Project Award",
-      //     date: "2022",
-      //     category: "Project Excellence",
-      //     description: "Won award for innovative capstone project in web technology category.",
-      //     details: [
-      //       "Built real-time collaborative web platform",
-      //       "Received first place among 50+ projects",
-      //       "Featured in university tech showcase",
-      //       "Later commercialized as successful startup",
-      //     ],
-      //     tags: ["Project", "Innovation", "Award"],
-      //     images: ["/images/achievement/ach-2/award.jpg"],
-      //   },
-      // ],
+      achievements: [
+        {
+          id: "ach-1",
+          title: "Innovation Prize (Upcycling For The Ocean) on Monaco Energy Boat Challenge 2023",
+          date: "2023",
+          category: "Project Excellence",
+          description: "RMT Solar Boat Team is one of the solar boat teams from Indonesia, Namely from the Diponegoro University, With the solar-powered ship prototype project that we developed and prepared for Monaco Solar & Energy Boat Challenge.",
+          details: [
+            // "Maintained 3.8+ GPA throughout program",
+            // "Published research paper on web optimization",
+            // "Awarded scholarship for academic excellence",
+            // "Selected as student mentor for incoming cohort",
+          ],
+          tags: ["Electrical System Design", "BLDC Motor Analysis","Circuit Engineering"],
+          images: ["/images/achievement/ach-1/award.jpg"],
+        },
+        {
+          id: "ach-2",
+          title: "Competition Finalist of Kontes Kapal Cepat Tidak Berawak Nasional (KKCTBN) 2022",
+          date: "2022",
+          category: "Project Excellence",
+          description: "Finalist of Kontes Kapal Cepat Tidak Berawak Nasional (KKCTBN) 2022, contributing to the design and development of an autonomous fast vessel prototype.",
+          details: [
+            // "Built real-time collaborative web platform",
+            // "Received first place among 50+ projects",
+            // "Featured in university tech showcase",
+            // "Later commercialized as successful startup",
+          ],
+          tags: ["Project", "Innovation", "Circuit Engineering"],
+          images: ["/images/achievement/ach-2/award.jpg"],
+        },
+         {
+          id: "ach-3",
+          title: "Competition Finalist of Boat Race Competition COMET 3.0 Nasional 2022",
+          date: "2022",
+          category: "Project Excellence",
+          description: "Finalist of Boat Race Competition COMET 3.0 Nasional 2022, competing in a national boat design and racing competition.",
+          details: [
+            // "Built real-time collaborative web platform",
+            // "Received first place among 50+ projects",
+            // "Featured in university tech showcase",
+            // "Later commercialized as successful startup",
+          ],
+          tags: ["Project", "Innovation", "Circuit Engineering", "Electrical System Design"],
+          images: ["/images/achievement/ach-2/award.jpg"],
+        },
+        {
+          id: "ach-4",
+          title: "Appointed as the Head of The Project in the Anniversary Event of the Naval Engineering Department in 2020, impacting 200+ students and lecturers and reach 1.340+ viewers on Youtube",
+          date: "2020",
+          category: "Project Excellence",
+          description: "Served as Project Head for the 2020 Naval Engineering Department Anniversary Event, leading the event planning and execution while engaging 200+ participants and reaching 1,340+ viewers on YouTube.",
+          details: [
+            // "Built real-time collaborative web platform",
+            // "Received first place among 50+ projects",
+            // "Featured in university tech showcase",
+            // "Later commercialized as successful startup",
+          ],
+          tags: ["Leadership", "Innovation", "Project Coordination", "Team Collaboration", "Public Communication  "],
+          images: ["/images/achievement/ach-2/award.jpg"],
+        },
+        // {
+        //   id: "ach-1",
+        //   title: "Dean's List Recognition",
+        //   date: "2021",
+        //   category: "Academic Excellence",
+        //   description: "Recognized for outstanding academic performance and research contributions.",
+        //   details: [
+        //     "Maintained 3.8+ GPA throughout program",
+        //     "Published research paper on web optimization",
+        //     "Awarded scholarship for academic excellence",
+        //     "Selected as student mentor for incoming cohort",
+        //   ],
+        //   tags: ["Academic", "Achievement", "Recognition"],
+        //   images: ["/images/achievement/ach-1/award.jpg"],
+        // },
+        // {
+        //   id: "ach-2",
+        //   title: "Best Capstone Project Award",
+        //   date: "2022",
+        //   category: "Project Excellence",
+        //   description: "Won award for innovative capstone project in web technology category.",
+        //   details: [
+        //     "Built real-time collaborative web platform",
+        //     "Received first place among 50+ projects",
+        //     "Featured in university tech showcase",
+        //     "Later commercialized as successful startup",
+        //   ],
+        //   tags: ["Project", "Innovation", "Award"],
+        //   images: ["/images/achievement/ach-2/award.jpg"],
+        // },
+      ],
     },
     {
       id: "edu-2",
@@ -252,9 +312,9 @@ export const portfolioData: IPortfolioData = {
         "Completed secondary education with strong academic performance and early involvement in engineering, technology, and leadership activities.",
       tags: ["React", "Node.js", "MongoDB", "Express.js"],
       images: [
-        "/images/education/edu-2/img1.jpg",
-        "/images/education/edu-2/img2.jpg",
-        "/images/education/edu-2/img3.jpg",
+        // "/images/education/edu-2/img1.jpg",
+        // "/images/education/edu-2/img2.jpg",
+        // "/images/education/edu-2/img3.jpg",
       ],
       // supportingDocuments: [
       //   {
@@ -314,38 +374,38 @@ export const portfolioData: IPortfolioData = {
       //     images: ["/images/volunteering/vol-4/img1.jpg"],
       //   },
       // ],
-      // achievements: [
-      //   {
-      //     id: "ach-3",
-      //     title: "Bootcamp Valedictorian",
-      //     date: "2023",
-      //     category: "Academic Excellence",
-      //     description: "Graduated as top student with perfect attendance and highest project scores.",
-      //     details: [
-      //       "Graduated top 1% of cohort",
-      //       "Completed all projects with A+ grades",
-      //       "Selected to be teaching assistant",
-      //       "Landed job offer before graduation",
-      //     ],
-      //     tags: ["Bootcamp", "Excellence", "Achievement"],
-      //     images: ["/images/achievement/ach-3/award.jpg"],
-      //   },
-      //   {
-      //     id: "ach-4",
-      //     title: "Best Capstone Application",
-      //     date: "2023",
-      //     category: "Project Excellence",
-      //     description: "Developed an innovative project management application used by bootcamp alumni.",
-      //     details: [
-      //       "Built full-stack project management tool",
-      //       "Won bootcamp capstone competition",
-      //       "Used by 500+ bootcamp alumni",
-      //       "Attracted investor interest",
-      //     ],
-      //     tags: ["Project", "Application", "Innovation"],
-      //     images: ["/images/achievement/ach-4/award.jpg"],
-      //   },
-      // ],
+      achievements: [
+        {
+          id: "ach-3",
+          title: "Honourable Mention Indonesian Science Project Olympiad",
+          date: "2017",
+          category: "Academic Excellence",
+          description: "Received an Honourable Mention at the Indonesian Science Project Olympiad (ISPO) for the development of the FRV S1-e (Fast Response Visual) drone project. The project focused on designing a disaster-response drone system to support early detection and monitoring in natural disaster situations, functioning as an Early Warning System (EWS). The project was selected to advance to the international stage at the Informatrix International Science Olympiad in Kazakhstan.",
+          details: [
+            // "Graduated top 1% of cohort",
+            // "Completed all projects with A+ grades",
+            // "Selected to be teaching assistant",
+            // "Landed job offer before graduation",
+          ],
+          tags: ["Drone Technology", "Early Warning System", "Disaster Response", "Innovation Project", "International Competition"],
+          images: ["/images/achievement/ach-3/award.jpg"],
+        },
+        // {
+        //   id: "ach-4",
+        //   title: "Best Capstone Application",
+        //   date: "2023",
+        //   category: "Project Excellence",
+        //   description: "Developed an innovative project management application used by bootcamp alumni.",
+        //   details: [
+        //     "Built full-stack project management tool",
+        //     "Won bootcamp capstone competition",
+        //     "Used by 500+ bootcamp alumni",
+        //     "Attracted investor interest",
+        //   ],
+        //   tags: ["Project", "Application", "Innovation"],
+        //   images: ["/images/achievement/ach-4/award.jpg"],
+        // },
+      ],
     },
   ],
   experience: [
@@ -374,9 +434,9 @@ export const portfolioData: IPortfolioData = {
         "Document Management",
       ],
       images: [
-        "/images/experience/exp-1/img1.jpg",
-        "/images/experience/exp-1/img2.jpg",
-        "/images/experience/exp-1/img3.jpg",
+        // "/images/experience/exp-1/img1.jpg",
+        // "/images/experience/exp-1/img2.jpg",
+        // "/images/experience/exp-1/img3.jpg",
       ],
       supportingDocuments: [
         {
@@ -415,8 +475,8 @@ export const portfolioData: IPortfolioData = {
         "Maritime Engineering",
       ],
       images: [
-        "/images/experience/exp-2/img1.jpg",
-        "/images/experience/exp-2/img2.jpg",
+        // "/images/experience/exp-2/img1.jpg",
+        // "/images/experience/exp-2/img2.jpg",
       ],
       supportingDocuments: [
         {
@@ -449,7 +509,9 @@ export const portfolioData: IPortfolioData = {
         "Figma",
         "Front-End UI",
       ],
-      images: ["/images/experience/exp-3/img1.jpg"],
+      images: [
+        // "/images/experience/exp-3/img1.jpg"
+      ],
       supportingDocuments: [
         {
           id: "doc-exp-3-1",
@@ -483,8 +545,8 @@ export const portfolioData: IPortfolioData = {
         "Github",
       ],
       images: [
-        "/images/experience/exp-4/img1.jpg",
-        "/images/experience/exp-4/img2.jpg",
+        // "/images/experience/exp-4/img1.jpg",
+        // "/images/experience/exp-4/img2.jpg",
       ],
       supportingDocuments: [
         {
@@ -529,8 +591,8 @@ export const portfolioData: IPortfolioData = {
         "2D CAD Drawing",
       ],
       images: [
-        "/images/experience/exp-5/img1.jpg",
-        "/images/experience/exp-5/img2.jpg",
+        // "/images/experience/exp-5/img1.jpg",
+        // "/images/experience/exp-5/img2.jpg",
       ],
       supportingDocuments: [
         {
@@ -563,8 +625,8 @@ export const portfolioData: IPortfolioData = {
         "Circuit Engineering",
       ],
       images: [
-        "/images/organization/org-5/img1.jpg",
-        "/images/organization/org-5/img2.jpg",
+        // "/images/organization/org-5/img1.jpg",
+        // "/images/organization/org-5/img2.jpg",
       ],
       supportingDocuments: [
         {
@@ -633,9 +695,9 @@ export const portfolioData: IPortfolioData = {
       ],
       tags: ["Media Strategy", "Leadership", "Organizational Communication"],
       images: [
-        "/images/organization/org-1/img1.jpg",
-        "/images/organization/org-1/img2.jpg",
-        "/images/organization/org-1/img3.jpg",
+        // "/images/organization/org-1/img1.jpg",
+        // "/images/organization/org-1/img2.jpg",
+        // "/images/organization/org-1/img3.jpg",
       ],
       supportingDocuments: [
         {
@@ -667,9 +729,9 @@ export const portfolioData: IPortfolioData = {
       ],
       tags: ["Media Strategy", "Leadership", "Organizational Communication"],
       images: [
-        "/images/organization/org-1/img1.jpg",
-        "/images/organization/org-1/img2.jpg",
-        "/images/organization/org-1/img3.jpg",
+        // "/images/organization/org-1/img1.jpg",
+        // "/images/organization/org-1/img2.jpg",
+        // "/images/organization/org-1/img3.jpg",
       ],
       supportingDocuments: [
         {
@@ -700,8 +762,8 @@ export const portfolioData: IPortfolioData = {
         "Leadership",
       ],
       images: [
-        "/images/organization/org-3/img1.jpg",
-        "/images/organization/org-3/img2.jpg",
+        // "/images/organization/org-3/img1.jpg",
+        // "/images/organization/org-3/img2.jpg",
       ],
       supportingDocuments: [
         {
@@ -732,8 +794,8 @@ export const portfolioData: IPortfolioData = {
         "Leadership",
       ],
       images: [
-        "/images/organization/org-3/img1.jpg",
-        "/images/organization/org-3/img2.jpg",
+        // "/images/organization/org-3/img1.jpg",
+        // "/images/organization/org-3/img2.jpg",
       ],
       supportingDocuments: [
         {
@@ -764,8 +826,8 @@ export const portfolioData: IPortfolioData = {
         "Brand Communication",
       ],
       images: [
-        "/images/organization/org-2/img1.jpg",
-        "/images/organization/org-2/img2.jpg",
+        // "/images/organization/org-2/img1.jpg",
+        // "/images/organization/org-2/img2.jpg",
       ],
       supportingDocuments: [
         // {
@@ -805,8 +867,8 @@ export const portfolioData: IPortfolioData = {
         "Team Collaboration",
       ],
       images: [
-        "/images/organization/org-2/img1.jpg",
-        "/images/organization/org-2/img2.jpg",
+        // "/images/organization/org-2/img1.jpg",
+        // "/images/organization/org-2/img2.jpg",
       ],
       supportingDocuments: [
         // {
@@ -845,8 +907,8 @@ export const portfolioData: IPortfolioData = {
         "Circuit Engineering",
       ],
       images: [
-        "/images/organization/org-4/img1.jpg",
-        "/images/organization/org-4/img2.jpg",
+        // "/images/organization/org-4/img1.jpg",
+        // "/images/organization/org-4/img2.jpg",
       ],
       supportingDocuments: [
         // {
