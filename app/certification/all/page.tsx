@@ -109,7 +109,7 @@ export default function CertificationAllPage() {
               Certifications
             </h1>
             <p className="max-w-2xl text-lg text-foreground/70 md:text-xl">
-              Certifications supporting multidisciplinary development across engineering, energy systems,operations, and technology
+              Certifications supporting multidisciplinary development across engineering, energy systems, operations, and technology
             </p>
           </motion.div>
 

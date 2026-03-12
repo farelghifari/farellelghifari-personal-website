@@ -17,6 +17,7 @@ export function SupportingDocuments({
 
   const [selectedDoc, setSelectedDoc] = useState<SupportingDocument | null>(null)
   const [isModalOpen, setIsModalOpen] = useState(false)
+  const [zoom, setZoom] = useState(1)
 
   if (!documents || documents.length === 0) return null
 
@@ -30,19 +31,19 @@ export function SupportingDocuments({
 
   const handleDocumentClick = (doc: SupportingDocument) => {
 
-    // 🔹 OPEN LINK / ARTICLE DIRECTLY
     if (doc.type === 'link' || doc.type === 'external') {
       window.open(doc.url, '_blank')
       return
     }
 
+    setZoom(1)
     setSelectedDoc(doc)
     setIsModalOpen(true)
   }
 
   return (
     <>
-      {/* Supporting Documents Section */}
+      {/* Supporting Documents */}
       <div className="rounded-lg border border-border bg-card/50 backdrop-blur-sm p-4">
 
         <h4 className="text-sm font-semibold text-foreground mb-4 flex items-center gap-2">
@@ -64,7 +65,6 @@ export function SupportingDocuments({
               )}
             >
 
-              {/* ICON */}
               {doc.type === 'pdf' && (
                 <FileText size={18} className="text-red-500 flex-shrink-0" />
               )}
@@ -108,22 +108,45 @@ export function SupportingDocuments({
         >
 
           <div
-            className="bg-background rounded-lg border border-border max-w-4xl w-full max-h-[90vh] overflow-hidden flex flex-col"
+            className="bg-background rounded-lg border border-border w-[1000px] max-h-[90vh] overflow-hidden flex flex-col"
             onClick={(e) => e.stopPropagation()}
           >
 
             {/* HEADER */}
             <div className="flex items-center justify-between p-4 border-b border-border">
+
               <h3 className="text-lg font-semibold text-foreground truncate">
                 {selectedDoc.title}
               </h3>
 
-              <button
-                onClick={() => setIsModalOpen(false)}
-                className="p-2 hover:bg-primary/10 rounded-lg transition-colors"
-              >
-                <X size={20} />
-              </button>
+              <div className="flex items-center gap-2">
+
+                <button
+                  onClick={() => setZoom((z) => Math.max(0.5, z - 0.1))}
+                  className="px-2 py-1 text-sm border rounded"
+                >
+                  -
+                </button>
+
+                <span className="text-sm w-12 text-center">
+                  {Math.round(zoom * 100)}%
+                </span>
+
+                <button
+                  onClick={() => setZoom((z) => Math.min(3, z + 0.1))}
+                  className="px-2 py-1 text-sm border rounded"
+                >
+                  +
+                </button>
+
+                <button
+                  onClick={() => setIsModalOpen(false)}
+                  className="p-2 hover:bg-primary/10 rounded-lg transition-colors"
+                >
+                  <X size={20} />
+                </button>
+
+              </div>
             </div>
 
             {/* CONTENT */}
@@ -131,11 +154,23 @@ export function SupportingDocuments({
 
               {/* PDF */}
               {selectedDoc.type === 'pdf' && (
-                <iframe
-                  src={`${selectedDoc.url}#toolbar=0`}
-                  className="w-full h-full min-h-[500px]"
-                  title={selectedDoc.title}
-                />
+                <div className="overflow-auto flex justify-center p-4">
+
+                  <div
+                    style={{
+                      transform: `scale(${zoom})`,
+                      transformOrigin: 'top center'
+                    }}
+                    className="transition-transform"
+                  >
+                    <iframe
+                      src={`${selectedDoc.url}#toolbar=0`}
+                      className="w-[900px] h-[1100px] border rounded"
+                      title={selectedDoc.title}
+                    />
+                  </div>
+
+                </div>
               )}
 
               {/* YOUTUBE */}
@@ -157,6 +192,7 @@ export function SupportingDocuments({
               )}
 
             </div>
+
           </div>
 
         </div>

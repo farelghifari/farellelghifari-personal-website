@@ -64,6 +64,7 @@ export interface ICertification {
   description: string;
   tags: string[];
   images: string[];
+  imageTitles?: string[];
   skills?: string[];
   logo?: string;
   pdf?: string;
@@ -157,10 +158,22 @@ export const portfolioData: IPortfolioData = {
           url: "/documents/educational/bachelor-degree-diploma-suplement-skpi.pdf",
         },
         {
-          id: "doc-edu-1-4",
+          id: "doc-edu-1-3",
           title: "Academic Transcript",
           type: "pdf",
           url: "/documents/educational/transcript.pdf",
+        },
+        {
+          id: "doc-edu-1-4",
+          title: "Portofolio Design",
+          type: "pdf",
+          url: "/documents/portofolio/portofolio-design.pdf",
+        },
+        {
+          id: "doc-edu-1-5",
+          title: "Portofolio Research",
+          type: "pdf",
+          url: "/documents/portofolio/portofolio-research.pdf",
         },
       ],
       volunteering: [
@@ -936,6 +949,7 @@ export const portfolioData: IPortfolioData = {
       tags: ["Piping", "Stress Analysis", "CAESAR II"],
       group: "Engineering & Energy Systems",
       images: ["/documents/skills/engineer-general/piping-stress-analysis-caesar2/image-1.jpg","/documents/skills/engineer-general/piping-stress-analysis-caesar2/image-2.jpg"],
+      imageTitles: ["Basic Intermediate Level Piping Stress Analysis Using CAESAR II and Pipe Data Pro – Certificate of Completion", "Training Syllabus & Technical Coverage"],
       skills: [
         "CAESAR II",
         "Pipe Data Pro",
